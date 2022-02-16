@@ -3,13 +3,28 @@
 //  ImageSegmentation-CoreML
 //
 //  Created by Doyoung Gwak on 20/07/2019.
+//  Edited by Sriram Bhimaraju on 27/01/2022
 //  Copyright © 2019 Doyoung Gwak. All rights reserved.
-//
+/*
+ * In this view controller, the user surveys a scene in real time with
+ * their camera, and the app analyzes the objects it sees.
+ *
+ * Current features in the app:
+ *   The app says aloud what it sees in the frame. Based on how high or low the object is in the image frame, the program speaks in a different tone. An object high in the frame will be announced in a high-pitch female tone, while an object low in the frame will be announced in a deep, male tone
+ *
+ * Potential features to be added:
+ *   HRTF spacialization or changing the right-left headphone balance could be used to indicate an object's horizontal placement in the image frame. Additionally, the app should speak only when the image is double-tapped, so the user can customize when they hear auditory feedback.
+ *
+ * Limitations:
+ *   The app speaks in a slightly jarring and monotonous tone.
+ */
+
 
 import UIKit
 import Vision
+import AVFoundation
 
-class LiveImageViewController: UIViewController {
+class LiveImageViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
     // MARK: - UI Properties
     @IBOutlet weak var videoPreview: UIView!
@@ -155,7 +170,7 @@ extension LiveImageViewController {
         let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:])
         try? handler.perform([request])
     }
-    
+
     // post-processing
     func visionRequestDidComplete(request: VNRequest, error: Error?) {
         self.👨‍🔧.🏷(with: "endInference")
@@ -163,6 +178,35 @@ extension LiveImageViewController {
         if let observations = request.results as? [VNCoreMLFeatureValueObservation],
             let segmentationmap = observations.first?.featureValue.multiArrayValue {
             
+            // sriram - new code
+            guard let row = segmentationmap.shape[0] as? Int,
+                let col = segmentationmap.shape[1] as? Int else {
+                    return
+            }
+            
+            let imageFrameCoordinates = StillImageViewController.getImageFrameCoordinates(segmentationmap: segmentationmap, row: row, col: col)
+            
+
+            let d = imageFrameCoordinates.d
+            let x = imageFrameCoordinates.x
+            let y = imageFrameCoordinates.y
+
+            print("any value",terminator: Array(repeating: "\n", count: 100).joined())
+            
+            for (k,v) in d {
+                if (k==0) {
+                    continue
+                }
+                
+                let objectAndPitchMultiplier = StillImageViewController.getObjectAndPitchMultiplier(k:k, v:v, x:x, y:y, row: row, col: col)
+                let obj = objectAndPitchMultiplier.obj
+                let mult_val = objectAndPitchMultiplier.mult_val
+
+                StillImageViewController.speak(text: obj, multiplier: mult_val)
+                sleep(3);
+            }
+            
+            // sriram - existing rendering code
             let segmentationResultMLMultiArray = SegmentationResultMLMultiArray(mlMultiArray: segmentationmap)
             DispatchQueue.main.async { [weak self] in
                 // update result

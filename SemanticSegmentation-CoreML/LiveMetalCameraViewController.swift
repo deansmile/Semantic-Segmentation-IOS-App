@@ -8,8 +8,9 @@
 
 import UIKit
 import Vision
+import AVFoundation
 
-class LiveMetalCameraViewController: UIViewController {
+class LiveMetalCameraViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
     // MARK: - UI Properties
     @IBOutlet weak var metalVideoPreview: MetalVideoView!
@@ -25,6 +26,20 @@ class LiveMetalCameraViewController: UIViewController {
     
     var cameraTexture: Texture?
     var segmentationTexture: Texture?
+    
+    let synthesizer = AVSpeechSynthesizer() // Speech
+    var speechDelayTimer: Timer? // Makes sure that it doesn't speak too fast.
+
+    // sriram the new method is better
+    /*
+    func speak(text: String) { // makes it speak
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+        utterance.rate = 0.5 // slows down speaking speed
+        synthesizer.speak(utterance)
+    }
+     */
+    
     
     // MARK: - AV Properties
     var videoCapture: VideoCapture!
@@ -56,6 +71,7 @@ class LiveMetalCameraViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print ("I am in viewDidLoad")
         // setup ml model
         setUpModel()
         
@@ -63,20 +79,20 @@ class LiveMetalCameraViewController: UIViewController {
         setUpCamera()
         
         // setup delegate for performance measurement
-        👨‍🔧.delegate = self
+        // 👨‍🔧.delegate = self
     }
     
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() { // override
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) { // override
         super.viewWillAppear(animated)
         self.videoCapture.start()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) { // override
         super.viewWillDisappear(animated)
         self.videoCapture.stop()
     }
@@ -139,7 +155,8 @@ extension LiveMetalCameraViewController {
     }
     
     // post-processing
-    func visionRequestDidComplete(request: VNRequest, error: Error?) {
+    // add to still image
+    public func visionRequestDidComplete(request: VNRequest, error: Error?) {
         self.👨‍🔧.🏷(with: "endInference")
         
         if let observations = request.results as? [VNCoreMLFeatureValueObservation],
@@ -153,36 +170,29 @@ extension LiveMetalCameraViewController {
                   let segmentationTexture = multitargetSegmentationTextureGenerater.texture(segmentationmap, row, col, numberOfLabels) else {
                 return
             }
-            let objects=["background", "aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat", "chair", "cow", "diningtable", "dog", "horse", "motorbike", "person", "pottedplant", "sheep", "sofa", "train", "tv"]
-            var d=[Int: Int](),x=[Int:Int](),y=[Int:Int]()
-            for i in 0...row-1 {
-                for j in 0...col-1 {
-                    let key=[i,j] as [NSNumber]
-                    let k=segmentationmap[key].intValue
-                    if d.keys.contains(k) {
-                        let a : Int = d[k] ?? 0
-                        let b : Int = x[k] ?? 0
-                        let c : Int = y[k] ?? 0
-                        d[k]=a+1
-                        x[k]=b+j
-                        y[k]=c+i
-                    }
-                    else {
-                        d[k]=0
-                        x[k]=j
-                        y[k]=i
-                    }
-                }
-            }
+            
+            let imageFrameCoordinates = StillImageViewController.getImageFrameCoordinates(segmentationmap: segmentationmap, row: row, col: col)
+            
+
+            let d = imageFrameCoordinates.d
+            let x = imageFrameCoordinates.x
+            let y = imageFrameCoordinates.y
+
             print("any value",terminator: Array(repeating: "\n", count: 100).joined())
+            
             for (k,v) in d {
                 if (k==0) {
                     continue
                 }
-                let b : Int = x[k] ?? 0
-                let c : Int = y[k] ?? 0
-                print(objects[k], Double(b)/Double(v)/Double(col),1-Double(c)/Double(v)/Double(row))
+                
+                let objectAndPitchMultiplier = StillImageViewController.getObjectAndPitchMultiplier(k:k, v:v, x:x, y:y, row: row, col: col)
+                let obj = objectAndPitchMultiplier.obj
+                let mult_val = objectAndPitchMultiplier.mult_val
+
+                StillImageViewController.speak(text: obj, multiplier: mult_val)
+                sleep(3);
             }
+            
             let overlayedTexture = overlayingTexturesGenerater.texture(cameraTexture, segmentationTexture)
             metalVideoPreview.currentTexture = overlayedTexture
             
@@ -195,8 +205,10 @@ extension LiveMetalCameraViewController {
             self.👨‍🔧.🎬🤚()
             isInferencing = false
         }
+    
     }
 }
+
 
 // MARK: - 📏(Performance Measurement) Delegate
 extension LiveMetalCameraViewController: 📏Delegate {
