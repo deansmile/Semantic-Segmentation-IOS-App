@@ -5,7 +5,7 @@
 //  Created by Doyoung Gwak on 20/07/2019.
 //  Copyright © 2019 Doyoung Gwak. All rights reserved.
 //
-// test github
+
 import UIKit
 
 class DrawingSegmentationView: UIView {
@@ -17,8 +17,6 @@ class DrawingSegmentationView: UIView {
             return color
         } else {
             let color = UIColor(hue: CGFloat(index) / CGFloat(30), saturation: 1, brightness: 1, alpha: 0.5)
-            print(index)
-            print ("I just printed the index here")
             DrawingSegmentationView.colors[index] = color
             return color
         }

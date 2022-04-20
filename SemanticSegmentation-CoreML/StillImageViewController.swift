@@ -26,6 +26,16 @@ import UIKit
 import Vision
 import AVFoundation
 
+// Declaring AVSpeechSynthesizer as an instance variable to hold it in reference until the last utterance is spoken
+let synthesizer = AVSpeechSynthesizer() // Speech
+
+class CustomTapGestureRecognizer: UITapGestureRecognizer {
+    //var obj_name: String = ""
+    //var mult_val: Float = 0.0
+    
+    var objs = [String]()
+    var mults = [Float]()
+}
 
 class StillImageViewController: UIViewController,
                                     AVSpeechSynthesizerDelegate {
@@ -49,6 +59,9 @@ class StillImageViewController: UIViewController,
      * It takes as inputs the segmentationmap, the number of rows, and the number of columns of the camera image and returns the depth, x, and y coordinates of the image frame.
      */
     public static func getImageFrameCoordinates(segmentationmap: MLMultiArray, row: Int, col: Int) -> (d: Dictionary<Int, Int>, x: Dictionary<Int, Int>, y: Dictionary<Int, Int>) {
+        
+        var depthMap = AVCaptureDepthDataOutput()
+        
         var d=[Int: Int](),x=[Int:Int](),y=[Int:Int]()
         for i in 0...row-1 {
             for j in 0...col-1 {
@@ -61,6 +74,7 @@ class StillImageViewController: UIViewController,
                     d[k]=a+1
                     x[k]=b+j
                     y[k]=c+i
+                    // StillImageViewController.speak(text: String(x[k] * y[k]), multiplier:1)
                 }
                 else {
                     d[k]=0
@@ -69,7 +83,7 @@ class StillImageViewController: UIViewController,
                 }
             }
         }
-        
+        // StillImageViewController.speak(text: String(x*y), multiplier:1)
         return (d, x, y)
     }
     
@@ -83,14 +97,10 @@ class StillImageViewController: UIViewController,
         
         let b : Int = x[k] ?? 0
         let c : Int = y[k] ?? 0
-        print ("------------")
-        print ("objects[k] is: ")
-        print (objects[k])
-        print ("------------")
-        
-        print(objects[k], Double(b)/Double(v)/Double(col),1-Double(c)/Double(v)/Double(row))
-        print("The multiplier y is ")
-        print(1-Double(c)/Double(v)/Double(row))
+
+        //print(objects[k], Double(b)/Double(v)/Double(col),1-Double(c)/Double(v)/Double(row))
+        //print("The multiplier y is ")
+        //print(1-Double(c)/Double(v)/Double(row))
         
         // old: multiplier: Float((y[k]!))+0.7
         let multiplier = 0.7 + Float(1-Double(c)/Double(v)/Double(row))
@@ -106,9 +116,8 @@ class StillImageViewController: UIViewController,
      *          multiplier alters the tone and pitch in which text is said
      */
     public static func speak(text: String, multiplier: Float) {
-        let synthesizer = AVSpeechSynthesizer() // Speech
-        var speechDelayTimer: Timer? // Makes sure that it doesn't speak too fast.
-        let utterance = AVSpeechUtterance(string: text)
+        let utterance = AVSpeechUtterance(string: String(text))
+
         utterance.rate = 0.5 // slows down speaking speed
         utterance.pitchMultiplier = multiplier; // 0.7
         if (multiplier < 1) {
@@ -165,13 +174,15 @@ extension StillImageViewController: UIImagePickerControllerDelegate, UINavigatio
             let url = info[.imageURL] as? URL {
             mainImageView.image = image
             self.predict(with: url)
-            // StillImageViewController.speak(text: "Sofa to the right", multiplier: 0.7)
+            //StillImageViewController.speak(text: "Sofa to the right", multiplier: 0.7)
         }
         dismiss(animated: true, completion: nil)
     }
 }
 
-
+//class StillImageViewController: UIViewController, AVSpeechSynthesizerDelegate {
+//extension StillImageViewController: AVSpeechSynthesizerDelegate {
+//}
 
 // MARK: - Inference
 extension StillImageViewController {
@@ -204,6 +215,8 @@ extension StillImageViewController {
             let y = imageFrameCoordinates.y
 
             print("any value",terminator: Array(repeating: "\n", count: 100).joined())
+            var objs = [String]()
+            var mults = [Float]()
             
             for (k,v) in d {
                 if (k==0) {
@@ -214,14 +227,35 @@ extension StillImageViewController {
                 let obj = objectAndPitchMultiplier.obj
                 let mult_val = objectAndPitchMultiplier.mult_val
 
-                StillImageViewController.speak(text: obj, multiplier: mult_val)
-                sleep(3);
+                objs.append(obj)
+                mults.append(mult_val)
+                //StillImageViewController.speak(text: obj, multiplier: mult_val)
                 
                 // DispatchQueue.main.asyncAfter(deadline: .now() + 2)
             }
             
+            let tap = CustomTapGestureRecognizer(target: self, action: #selector(tapSelector))
+        
+            tap.objs = objs
+            tap.mults = mults
+            tap.numberOfTapsRequired = 2
+            view.addGestureRecognizer(tap)
+            
             drawingView.segmentationmap = SegmentationResultMLMultiArray(mlMultiArray: segmentationmap)
         }
     }
+    
+    @objc func tapSelector(sender: CustomTapGestureRecognizer) {
+        let cnt = sender.objs.count
+        if cnt == 0 {
+            StillImageViewController.speak(text: "No Objects Identified", multiplier: 1)
+        } else {
+            for i in 0...cnt-1 {
+                let obj = sender.objs[i]
+                let mult = sender.mults[i]
+                StillImageViewController.speak(text: obj, multiplier: mult)
+            }
+        }
+    }
+    
 }
-

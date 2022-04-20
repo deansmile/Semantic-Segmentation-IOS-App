@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OKs-u2-zxf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uso-ud-VWq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,13 +12,13 @@
         <!--Live Image-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LiveImageViewController" customModule="SemanticSegmentation_CoreML" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="LiveImageViewController" customModule="SemanticSegmentation_CoreML" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EeP-4W-fyk">
-                                <rect key="frame" x="0.0" y="44" width="414" height="25"/>
+                                <rect key="frame" x="0.0" y="25" width="414" height="25"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inference: xxx ms" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oQ3-sW-G4Q">
                                         <rect key="frame" x="16" y="8" width="120.5" height="9"/>
@@ -58,14 +58,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAF-1N-GU4">
-                                <rect key="frame" x="0.0" y="69" width="414" height="552"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="552"/>
                                 <color key="backgroundColor" red="0.86274509799999999" green="0.63529411759999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="JAF-1N-GU4" secondAttribute="height" multiplier="3:4" priority="750" id="1PJ-If-ZK3"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZz-xg-qgT" customClass="DrawingSegmentationView" customModule="SemanticSegmentation_CoreML" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="69" width="414" height="552"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="552"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YZz-xg-qgT" secondAttribute="height" multiplier="3:4" id="1gl-1z-9i5"/>
@@ -77,7 +77,7 @@
                         <constraints>
                             <constraint firstItem="JAF-1N-GU4" firstAttribute="width" secondItem="JAF-1N-GU4" secondAttribute="height" multiplier="3:4" priority="750" id="1jT-Jl-EPl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YZz-xg-qgT" secondAttribute="trailing" id="46o-gU-ADq"/>
-                            <constraint firstItem="EeP-4W-fyk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4zj-wj-89g"/>
+                            <constraint firstItem="EeP-4W-fyk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="4zj-wj-89g"/>
                             <constraint firstItem="YZz-xg-qgT" firstAttribute="top" secondItem="EeP-4W-fyk" secondAttribute="bottom" id="56f-zC-jfm"/>
                             <constraint firstItem="EeP-4W-fyk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="COB-ry-m84"/>
                             <constraint firstItem="JAF-1N-GU4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="K8m-kd-6uF"/>
@@ -103,20 +103,20 @@
         <!--Still Image View Controller-->
         <scene sceneID="IS1-oH-MuW">
             <objects>
-                <viewController id="X7F-xP-m0H" customClass="StillImageViewController" customModule="SemanticSegmentation_CoreML" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="X7F-xP-m0H" customClass="StillImageViewController" customModule="SemanticSegmentation_CoreML" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rrC-89-LGp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R9C-5j-ZDa">
-                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <rect key="frame" x="0.0" y="214" width="414" height="414"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.40175513699999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="R9C-5j-ZDa" secondAttribute="height" multiplier="1:1" priority="750" id="hLb-44-q2j"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcq-ZI-Sh1" customClass="DrawingSegmentationView" customModule="SemanticSegmentation_CoreML" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <rect key="frame" x="0.0" y="214" width="414" height="414"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -151,16 +151,16 @@
         <!--GPU Live-->
         <scene sceneID="5c9-lY-u7Z">
             <objects>
-                <viewController id="uso-ud-VWq" customClass="LiveMetalCameraViewController" customModule="SemanticSegmentation_CoreML" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="uso-ud-VWq" customClass="LiveMetalCameraViewController" customModule="SemanticSegmentation_CoreML" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BrB-wO-R8s">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mtkView contentMode="scaleAspectFit" colorPixelFormat="BGRA8Unorm" depthStencilPixelFormat="Depth32Float" translatesAutoresizingMaskIntoConstraints="NO" id="jI5-DE-WCD" customClass="MetalVideoView" customModule="SemanticSegmentation_CoreML" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="69" width="414" height="744"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="709"/>
                             </mtkView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCS-RK-DG2">
-                                <rect key="frame" x="0.0" y="44" width="414" height="25"/>
+                                <rect key="frame" x="0.0" y="25" width="414" height="25"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inference: xxx ms" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eCN-te-kgA">
                                         <rect key="frame" x="16" y="8" width="120.5" height="9"/>
@@ -199,15 +199,25 @@
                                     <constraint firstItem="m83-Re-i3W" firstAttribute="centerY" secondItem="eCN-te-kgA" secondAttribute="centerY" id="eay-uz-t09"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mn-At-kPt">
+                                <rect key="frame" x="20" y="-6" width="60" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Menu"/>
+                                <connections>
+                                    <segue destination="OKs-u2-zxf" kind="show" id="GGl-OF-bLP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZRo-26-PEe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZRo-26-PEe" firstAttribute="trailing" secondItem="jI5-DE-WCD" secondAttribute="trailing" id="4mM-Rd-x23"/>
+                            <constraint firstItem="6Mn-At-kPt" firstAttribute="leading" secondItem="ZRo-26-PEe" secondAttribute="leading" constant="20" id="Kyw-Ny-ibC"/>
                             <constraint firstItem="jI5-DE-WCD" firstAttribute="leading" secondItem="ZRo-26-PEe" secondAttribute="leading" id="TO8-zS-mBB"/>
                             <constraint firstItem="lCS-RK-DG2" firstAttribute="leading" secondItem="ZRo-26-PEe" secondAttribute="leading" id="UEj-eA-eVv"/>
                             <constraint firstItem="ZRo-26-PEe" firstAttribute="bottom" secondItem="jI5-DE-WCD" secondAttribute="bottom" id="ehq-0u-Is5"/>
-                            <constraint firstItem="lCS-RK-DG2" firstAttribute="top" secondItem="ZRo-26-PEe" secondAttribute="top" id="on3-i6-co5"/>
+                            <constraint firstItem="lCS-RK-DG2" firstAttribute="top" secondItem="6Mn-At-kPt" secondAttribute="bottom" id="j32-oj-hBo"/>
+                            <constraint firstItem="lCS-RK-DG2" firstAttribute="top" secondItem="ZRo-26-PEe" secondAttribute="top" constant="25" id="on3-i6-co5"/>
                             <constraint firstItem="jI5-DE-WCD" firstAttribute="top" secondItem="lCS-RK-DG2" secondAttribute="bottom" id="rEI-by-IkZ"/>
                             <constraint firstItem="lCS-RK-DG2" firstAttribute="trailing" secondItem="ZRo-26-PEe" secondAttribute="trailing" id="utf-xU-S7a"/>
                         </constraints>
@@ -227,8 +237,9 @@
         <!--Tab Bar Controller-->
         <scene sceneID="caK-0V-iKQ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OKs-u2-zxf" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="OKs-u2-zxf" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="6lN-ng-pc1"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k8X-uG-0Ob">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -248,11 +259,11 @@
         <!--Still Image-->
         <scene sceneID="Rnx-nh-ynt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i8C-c5-qYh" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="i8C-c5-qYh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Still Image" image="photo" catalog="system" id="1zq-Nq-tz6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VK7-al-5iK">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -267,11 +278,11 @@
         <!--Apps-->
         <scene sceneID="FZv-NB-zLI">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XeG-xj-c5B" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="XeG-xj-c5B" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Apps" image="list.bullet.rectangle" catalog="system" id="Q3x-C0-V0r"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4HX-Ts-OCH">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -286,16 +297,16 @@
         <!--Table View Controller-->
         <scene sceneID="vcO-mZ-dZz">
             <objects>
-                <tableViewController id="7Ff-Mb-VPg" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="7Ff-Mb-VPg" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NFo-O6-Ykz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
                             <tableViewSection id="Vha-KX-gob">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="JPd-Vk-ofP" style="IBUITableViewCellStyleDefault" id="T8U-Ih-k1d">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T8U-Ih-k1d" id="lbN-e5-faT">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -331,28 +342,28 @@
         <!--Tracking Face and Segmenting-->
         <scene sceneID="nNY-jl-xHy">
             <objects>
-                <viewController id="iHA-FX-W3I" customClass="LiveFaceDetectionAndFaceParsingViewController" customModule="SemanticSegmentation_CoreML" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="iHA-FX-W3I" customClass="LiveFaceDetectionAndFaceParsingViewController" customModule="SemanticSegmentation_CoreML" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Edf-em-ItF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mtkView contentMode="scaleToFill" colorPixelFormat="BGRA8Unorm" depthStencilPixelFormat="Depth32Float" translatesAutoresizingMaskIntoConstraints="NO" id="Q0M-Vb-6ZM" customClass="MetalVideoView" customModule="SemanticSegmentation_CoreML" customModuleProvider="target">
-                                <rect key="frame" x="2" y="90" width="175" height="233"/>
+                                <rect key="frame" x="2" y="58" width="175" height="233"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Q0M-Vb-6ZM" secondAttribute="height" multiplier="3:4" id="1Cc-hv-az7"/>
                                 </constraints>
                             </mtkView>
                             <mtkView contentMode="scaleToFill" colorPixelFormat="BGRA8Unorm" depthStencilPixelFormat="Depth32Float" translatesAutoresizingMaskIntoConstraints="NO" id="Fdq-JU-CBt" customClass="MetalVideoView" customModule="SemanticSegmentation_CoreML" customModuleProvider="target">
-                                <rect key="frame" x="179" y="90" width="233" height="233"/>
+                                <rect key="frame" x="179" y="58" width="233" height="233"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Fdq-JU-CBt" secondAttribute="height" multiplier="1:1" id="z9P-Pg-cSr"/>
                                 </constraints>
                             </mtkView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2QB-Dj-Mnp">
-                                <rect key="frame" x="2" y="325" width="410" height="486"/>
+                                <rect key="frame" x="2" y="293" width="410" height="518"/>
                                 <subviews>
                                     <mtkView contentMode="scaleToFill" colorPixelFormat="BGRA8Unorm" depthStencilPixelFormat="Depth32Float" translatesAutoresizingMaskIntoConstraints="NO" id="Zhn-Xr-KF1" customClass="MetalVideoView" customModule="SemanticSegmentation_CoreML" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="38" width="410" height="410"/>
+                                        <rect key="frame" x="0.0" y="54" width="410" height="410"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Zhn-Xr-KF1" secondAttribute="height" id="mFK-VG-B0l"/>
                                         </constraints>
@@ -396,9 +407,9 @@
     <resources>
         <image name="camera" catalog="system" width="128" height="94"/>
         <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
-        <image name="memorychip" catalog="system" width="128" height="116"/>
+        <image name="memorychip" catalog="system" width="128" height="107"/>
         <image name="photo" catalog="system" width="128" height="93"/>
-        <image name="photo.on.rectangle.fill" catalog="system" width="128" height="96"/>
+        <image name="photo.on.rectangle.fill" catalog="system" width="128" height="97"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

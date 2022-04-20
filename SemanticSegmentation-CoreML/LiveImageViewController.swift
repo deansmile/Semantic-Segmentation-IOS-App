@@ -24,7 +24,9 @@ import UIKit
 import Vision
 import AVFoundation
 
-class LiveImageViewController: UIViewController, AVSpeechSynthesizerDelegate {
+
+class LiveImageViewController: UIViewController, AVSpeechSynthesizerDelegate{
+    
 
     // MARK: - UI Properties
     @IBOutlet weak var videoPreview: UIView!
@@ -33,6 +35,7 @@ class LiveImageViewController: UIViewController, AVSpeechSynthesizerDelegate {
     @IBOutlet weak var inferenceLabel: UILabel!
     @IBOutlet weak var etimeLabel: UILabel!
     @IBOutlet weak var fpsLabel: UILabel!
+    
     
     // MARK: - AV Properties
     var videoCapture: VideoCapture!
@@ -84,6 +87,7 @@ class LiveImageViewController: UIViewController, AVSpeechSynthesizerDelegate {
         
         // setup delegate for performance measurement
         👨‍🔧.delegate = self
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -190,8 +194,10 @@ extension LiveImageViewController {
             let d = imageFrameCoordinates.d
             let x = imageFrameCoordinates.x
             let y = imageFrameCoordinates.y
-
+            
             print("any value",terminator: Array(repeating: "\n", count: 100).joined())
+            var objs = [String]()
+            var mults = [Float]()
             
             for (k,v) in d {
                 if (k==0) {
@@ -202,9 +208,17 @@ extension LiveImageViewController {
                 let obj = objectAndPitchMultiplier.obj
                 let mult_val = objectAndPitchMultiplier.mult_val
 
-                StillImageViewController.speak(text: obj, multiplier: mult_val)
-                sleep(3);
+                objs.append(obj)
+                mults.append(mult_val)
+                //StillImageViewController.speak(text: obj, multiplier: mult_val)
             }
+            
+            
+            let tap = CustomTapGestureRecognizer(target: self, action: #selector(tapSelector))
+            tap.objs = objs
+            tap.mults = mults
+            tap.numberOfTapsRequired = 2
+            view.addGestureRecognizer(tap)
             
             // sriram - existing rendering code
             let segmentationResultMLMultiArray = SegmentationResultMLMultiArray(mlMultiArray: segmentationmap)
@@ -222,7 +236,21 @@ extension LiveImageViewController {
             isInferencing = false
         }
     }
+    
+    @objc func tapSelector(sender: CustomTapGestureRecognizer) {
+        let cnt = sender.objs.count
+        if cnt == 0 {
+            StillImageViewController.speak(text: "No Objects Identified", multiplier: 1)
+        } else {
+            for i in 0...cnt-1 {
+                let obj = sender.objs[i]
+                let mult = sender.mults[i]
+                StillImageViewController.speak(text: obj, multiplier: mult)
+            }
+        }
+    }
 }
+
 
 // MARK: - 📏(Performance Measurement) Delegate
 extension LiveImageViewController: 📏Delegate {
