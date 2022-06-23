@@ -10,7 +10,7 @@ import UIKit
 import Vision
 import AVFoundation
 
-class LiveMetalCameraViewController: UIViewController, AVSpeechSynthesizerDelegate{
+class LiveMetalCameraViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
     // MARK: - UI Properties
     @IBOutlet weak var metalVideoPreview: MetalVideoView!
@@ -77,9 +77,6 @@ class LiveMetalCameraViewController: UIViewController, AVSpeechSynthesizerDelega
         // setup camera
         setUpCamera()
         
-//        videoCapture.sessionQueue.async {
-//            self.setUpCamera()
-//        }
         // setup delegate for performance measurement
         // 👨‍🔧.delegate = self
     }
@@ -131,6 +128,7 @@ extension LiveMetalCameraViewController: VideoCaptureDelegate {
         
         // 카메라 프리뷰 텍스쳐
         cameraTexture = cameraTextureGenerater.texture(from: sampleBuffer)
+        
         guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         if !isInferencing {
             isInferencing = true
@@ -149,10 +147,13 @@ extension LiveMetalCameraViewController {
     // prediction
     func predict(with pixelBuffer: CVPixelBuffer) {
         guard let request = request else { fatalError() }
+        
         // vision framework configures the input size of image following our model's input configuration automatically
         let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:])
         try? handler.perform([request])
     }
+    
+    
     
     // post-processing
     // add to still image
@@ -182,12 +183,14 @@ extension LiveMetalCameraViewController {
             
             var objs = [String]()
             var mults = [Float]()
-            
+            var x_vals = [Double]()
+
             for (k,v) in d {
                 if (k==0) {
                     continue
                 }
                 
+                // Deep exhibit 3
                 let objectAndPitchMultiplier = StillImageViewController.getObjectAndPitchMultiplier(k:k, v:v, x:x, y:y, row: row, col: col)
                 let obj = objectAndPitchMultiplier.obj
                 let mult_val = objectAndPitchMultiplier.mult_val
@@ -200,6 +203,7 @@ extension LiveMetalCameraViewController {
             let tap = CustomTapGestureRecognizer(target: self, action: #selector(tapSelector))
             tap.objs = objs
             tap.mults = mults
+            tap.x_vals = x_vals
             tap.numberOfTapsRequired = 2
             view.addGestureRecognizer(tap)
             
@@ -217,7 +221,7 @@ extension LiveMetalCameraViewController {
         }
     
     }
-    
+    // Deep exhibit 4
     @objc func tapSelector(sender: CustomTapGestureRecognizer) {
         let cnt = sender.objs.count
         if cnt == 0 {
@@ -226,7 +230,8 @@ extension LiveMetalCameraViewController {
             for i in 0...cnt-1 {
                 let obj = sender.objs[i]
                 let mult = sender.mults[i]
-                StillImageViewController.speak(text: obj, multiplier: mult)
+                let x_value = sender.x_vals[i]
+                StillImageViewController.speak(text: (obj + " " + StillImageViewController.horizontalPosition(posValue:x_value)), multiplier: mult)
             }
         }
     }

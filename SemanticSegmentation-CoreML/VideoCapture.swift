@@ -35,7 +35,7 @@ public class VideoCapture: NSObject{
         })
     }
     
-    func setUpCamera(sessionPreset: AVCaptureSession.Preset, position: AVCaptureDevice.Position? = .back, completion: @escaping (_ success: Bool) -> Void) {
+    func setUpCamera(sessionPreset: AVCaptureSession.Preset, position: AVCaptureDevice.Position? = .front, completion: @escaping (_ success: Bool) -> Void) {
         
         captureSession.beginConfiguration()
         captureSession.sessionPreset = sessionPreset
@@ -43,7 +43,7 @@ public class VideoCapture: NSObject{
         
         let device: AVCaptureDevice?
         if let position = position {
-            device = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInDualCamera], mediaType: .video, position: position).devices.first
+            device = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInTrueDepthCamera], mediaType: .video, position: position).devices.first
         } else {
             device = AVCaptureDevice.default(.builtInDualCamera, for: AVMediaType.video,position: .back)
         }

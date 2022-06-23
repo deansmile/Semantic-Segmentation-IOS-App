@@ -35,6 +35,7 @@ class CustomTapGestureRecognizer: UITapGestureRecognizer {
     
     var objs = [String]()
     var mults = [Float]()
+    var x_vals = [Double]()
 }
 
 class StillImageViewController: UIViewController,
@@ -60,8 +61,10 @@ class StillImageViewController: UIViewController,
      */
     public static func getImageFrameCoordinates(segmentationmap: MLMultiArray, row: Int, col: Int) -> (d: Dictionary<Int, Int>, x: Dictionary<Int, Int>, y: Dictionary<Int, Int>) {
         
+        // Deep exhibit 5
         var depthMap = AVCaptureDepthDataOutput()
         
+        // Deep exhibit 6
         var d=[Int: Int](),x=[Int:Int](),y=[Int:Int]()
         for i in 0...row-1 {
             for j in 0...col-1 {
@@ -92,20 +95,24 @@ class StillImageViewController: UIViewController,
      * Returns the recognized object name and the pitch multiplier to use when speaking it out
      *
      */
-    public static func getObjectAndPitchMultiplier(k: Int, v: Int, x: Dictionary<Int, Int>, y: Dictionary<Int, Int>, row: Int, col: Int) -> (obj: String, mult_val: Float) {
-        let objects=["background", "aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat", "chair", "cow", "diningtable", "dog", "horse", "motorbike", "person", "pottedplant", "sheep", "sofa", "train", "tv"]
+    public static func getObjectAndPitchMultiplier(k: Int, v: Int, x: Dictionary<Int, Int>, y: Dictionary<Int, Int>, row: Int, col: Int) -> (obj: String, mult_val: Float, xValue: Double) {
+        let objects=["background", "aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat", "chair", "cow", "table", "dog", "horse", "motorbike", "person", "plant", "sheep", "sofa", "train", "tv"]
         
         let b : Int = x[k] ?? 0
         let c : Int = y[k] ?? 0
 
-        //print(objects[k], Double(b)/Double(v)/Double(col),1-Double(c)/Double(v)/Double(row))
-        //print("The multiplier y is ")
-        //print(1-Double(c)/Double(v)/Double(row))
+        print(objects[k], Double(b)/Double(v)/Double(col),1-Double(c)/Double(v)/Double(row))
+        print("The multiplier y is ")
+        print(1-Double(c)/Double(v)/Double(row))
+        // Deep exhibit 6
+        print("The size is ")
+        print((1-Double(c)/Double(v)/Double(row))*(Double(b)/Double(v)/Double(col)))
         
         // old: multiplier: Float((y[k]!))+0.7
         let multiplier = 0.7 + Float(1-Double(c)/Double(v)/Double(row))
+        let xValue = Double(b)/Double(v)/Double(col)
         
-        return (objects[k], multiplier)
+        return (objects[k], multiplier, xValue)
         
     }
     
@@ -115,6 +122,7 @@ class StillImageViewController: UIViewController,
      * @param   text is the String to be spoken
      *          multiplier alters the tone and pitch in which text is said
      */
+    // Deep exhibit 7
     public static func speak(text: String, multiplier: Float) {
         let utterance = AVSpeechUtterance(string: String(text))
 
@@ -127,6 +135,20 @@ class StillImageViewController: UIViewController,
             utterance.voice = AVSpeechSynthesisVoice(language: "en-AU")
         }
         synthesizer.speak(utterance)
+    }
+    
+    public static func horizontalPosition(posValue:Double) -> String {
+        if (posValue <= 0.20) {
+            return "far left"
+        } else if (posValue <= 0.46) {
+            return "left"
+        } else if (posValue <= 0.54) {
+            return "middle"
+        } else if (posValue <= 0.80) {
+            return "right"
+        } else {
+            return "far right"
+        }
     }
     
     override func viewDidLoad() {
@@ -217,6 +239,7 @@ extension StillImageViewController {
             print("any value",terminator: Array(repeating: "\n", count: 100).joined())
             var objs = [String]()
             var mults = [Float]()
+            var x_vals = [Double]()
             
             for (k,v) in d {
                 if (k==0) {
@@ -226,9 +249,11 @@ extension StillImageViewController {
                 let objectAndPitchMultiplier = StillImageViewController.getObjectAndPitchMultiplier(k:k, v:v, x:x, y:y, row: row, col: col)
                 let obj = objectAndPitchMultiplier.obj
                 let mult_val = objectAndPitchMultiplier.mult_val
+                let x_val = objectAndPitchMultiplier.xValue
 
                 objs.append(obj)
                 mults.append(mult_val)
+                x_vals.append(x_val)
                 //StillImageViewController.speak(text: obj, multiplier: mult_val)
                 
                 // DispatchQueue.main.asyncAfter(deadline: .now() + 2)
@@ -238,6 +263,7 @@ extension StillImageViewController {
         
             tap.objs = objs
             tap.mults = mults
+            tap.x_vals = x_vals
             tap.numberOfTapsRequired = 2
             view.addGestureRecognizer(tap)
             
@@ -245,6 +271,7 @@ extension StillImageViewController {
         }
     }
     
+    // Deep exhibit 8
     @objc func tapSelector(sender: CustomTapGestureRecognizer) {
         let cnt = sender.objs.count
         if cnt == 0 {
@@ -253,7 +280,8 @@ extension StillImageViewController {
             for i in 0...cnt-1 {
                 let obj = sender.objs[i]
                 let mult = sender.mults[i]
-                StillImageViewController.speak(text: obj, multiplier: mult)
+                let x_value = sender.x_vals[i]
+                StillImageViewController.speak(text: (obj + " " + StillImageViewController.horizontalPosition(posValue:x_value)), multiplier: mult)
             }
         }
     }

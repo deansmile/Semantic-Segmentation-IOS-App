@@ -25,8 +25,7 @@ import Vision
 import AVFoundation
 
 
-class LiveImageViewController: UIViewController, AVSpeechSynthesizerDelegate{
-    
+class LiveImageViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
     // MARK: - UI Properties
     @IBOutlet weak var videoPreview: UIView!
@@ -35,7 +34,6 @@ class LiveImageViewController: UIViewController, AVSpeechSynthesizerDelegate{
     @IBOutlet weak var inferenceLabel: UILabel!
     @IBOutlet weak var etimeLabel: UILabel!
     @IBOutlet weak var fpsLabel: UILabel!
-    
     
     // MARK: - AV Properties
     var videoCapture: VideoCapture!
@@ -87,7 +85,6 @@ class LiveImageViewController: UIViewController, AVSpeechSynthesizerDelegate{
         
         // setup delegate for performance measurement
         👨‍🔧.delegate = self
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -175,7 +172,7 @@ extension LiveImageViewController {
         try? handler.perform([request])
     }
 
-    // post-processing
+    // Deep exhibit 1
     func visionRequestDidComplete(request: VNRequest, error: Error?) {
         self.👨‍🔧.🏷(with: "endInference")
         
@@ -198,18 +195,20 @@ extension LiveImageViewController {
             print("any value",terminator: Array(repeating: "\n", count: 100).joined())
             var objs = [String]()
             var mults = [Float]()
+            var x_vals = [Double]()
             
             for (k,v) in d {
                 if (k==0) {
                     continue
                 }
-                
                 let objectAndPitchMultiplier = StillImageViewController.getObjectAndPitchMultiplier(k:k, v:v, x:x, y:y, row: row, col: col)
                 let obj = objectAndPitchMultiplier.obj
                 let mult_val = objectAndPitchMultiplier.mult_val
-
+                let x_val = objectAndPitchMultiplier.xValue
+                
                 objs.append(obj)
                 mults.append(mult_val)
+                x_vals.append(x_val)
                 //StillImageViewController.speak(text: obj, multiplier: mult_val)
             }
             
@@ -217,6 +216,7 @@ extension LiveImageViewController {
             let tap = CustomTapGestureRecognizer(target: self, action: #selector(tapSelector))
             tap.objs = objs
             tap.mults = mults
+            tap.x_vals = x_vals
             tap.numberOfTapsRequired = 2
             view.addGestureRecognizer(tap)
             
@@ -237,15 +237,21 @@ extension LiveImageViewController {
         }
     }
     
+    // Deep exhibit 2
     @objc func tapSelector(sender: CustomTapGestureRecognizer) {
         let cnt = sender.objs.count
         if cnt == 0 {
             StillImageViewController.speak(text: "No Objects Identified", multiplier: 1)
         } else {
-            for i in 0...cnt-1 {
+            var sorted=sender.x_vals.enumerated().sorted(by:{$0.element < $1.element})
+            for (i,e) in sorted {
                 let obj = sender.objs[i]
                 let mult = sender.mults[i]
-                StillImageViewController.speak(text: obj, multiplier: mult)
+                let x_value = sender.x_vals[i]//sender.x_vals[i]
+                // StillImageViewController.speak(text: (obj+String(x_value)), multiplier: mult)
+                StillImageViewController.speak(text: (obj + " " + StillImageViewController.horizontalPosition(posValue:x_value)), multiplier: mult)
+                
+                
             }
         }
     }
