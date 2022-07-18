@@ -227,11 +227,18 @@ extension LiveMetalCameraViewController {
         if cnt == 0 {
             StillImageViewController.speak(text: "No Objects Identified", multiplier: 1)
         } else {
-            for i in 0...cnt-1 {
+            var sorted=sender.x_vals.enumerated().sorted(by:{$0.element < $1.element})
+            for (i,e) in sorted {
                 let obj = sender.objs[i]
+                if (obj=="aeroplane" || obj=="sheep" || obj=="cow" || obj=="horse") {
+                    continue;
+                }
                 let mult = sender.mults[i]
-                let x_value = sender.x_vals[i]
+                let x_value = sender.x_vals[i]//sender.x_vals[i]
+                // StillImageViewController.speak(text: (obj+String(x_value)), multiplier: mult)
                 StillImageViewController.speak(text: (obj + " " + StillImageViewController.horizontalPosition(posValue:x_value)), multiplier: mult)
+                
+                
             }
         }
     }

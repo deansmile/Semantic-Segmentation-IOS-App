@@ -100,14 +100,16 @@ class StillImageViewController: UIViewController,
         
         let b : Int = x[k] ?? 0
         let c : Int = y[k] ?? 0
-
+        let size=Double(v)/(Double(row)*Double(col))
         print(objects[k], Double(b)/Double(v)/Double(col),1-Double(c)/Double(v)/Double(row))
-        print("The multiplier y is ")
-        print(1-Double(c)/Double(v)/Double(row))
+//        print("The multiplier y is ")
+//        print(1-Double(c)/Double(v)/Double(row))
         // Deep exhibit 6
-        print("The size is ")
-        print((1-Double(c)/Double(v)/Double(row))*(Double(b)/Double(v)/Double(col)))
-        
+        if size>=0.05 {
+            print("The size is ")
+            print(Double(v))
+            print(size)
+        }
         // old: multiplier: Float((y[k]!))+0.7
         let multiplier = 0.7 + Float(1-Double(c)/Double(v)/Double(row))
         let xValue = Double(b)/Double(v)/Double(col)
