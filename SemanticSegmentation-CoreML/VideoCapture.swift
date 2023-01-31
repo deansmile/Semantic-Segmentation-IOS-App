@@ -18,10 +18,15 @@ public protocol VideoCaptureDelegate: class {
 public class VideoCapture: NSObject{
     public var previewLayer: AVCaptureVideoPreviewLayer?
     public weak var delegate: VideoCaptureDelegate?
-    public var fps = 15
+    
+    //Giles - change frames per second FPS with the below command? Was 15
+    //Giles5 change again?
+    public var fps = 50
     
     let captureSession = AVCaptureSession()
     let videoOutput = AVCaptureVideoDataOutput()
+    
+    //Giles5 depthdata commented out
     let depthDataOutput = AVCaptureDepthDataOutput()
     let queue = DispatchQueue(label: "com.tucan9389.camera-queue")
     let sessionQueue = DispatchQueue(label: "data queue", qos: .userInitiated, attributes: [], autoreleaseFrequency: .workItem)
@@ -34,8 +39,9 @@ public class VideoCapture: NSObject{
             completion(success)
         })
     }
-    
-    func setUpCamera(sessionPreset: AVCaptureSession.Preset, position: AVCaptureDevice.Position? = .front, completion: @escaping (_ success: Bool) -> Void) {
+    //Giles change .front (selfie) to .back for the back camera
+    //Giles5 - what other cameras and FoV options are available?
+    func setUpCamera(sessionPreset: AVCaptureSession.Preset, position: AVCaptureDevice.Position? = .back, completion: @escaping (_ success: Bool) -> Void) {
         
         captureSession.beginConfiguration()
         captureSession.sessionPreset = sessionPreset
@@ -43,10 +49,17 @@ public class VideoCapture: NSObject{
         
         let device: AVCaptureDevice?
         if let position = position {
-            device = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInTrueDepthCamera], mediaType: .video, position: position).devices.first
-        } else {
-            device = AVCaptureDevice.default(.builtInDualCamera, for: AVMediaType.video,position: .back)
+            //Giles5 - .builtintruedepthcamera + .front above = selfie depth cam
+            device = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: .video, position: position).devices.first
         }
+        
+        else {
+            device = AVCaptureDevice.default(for: AVMediaType.video)
+        }
+//            device = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInTrueDepthCamera], mediaType: .video, position: position).devices.first
+//        } else {
+//            device = AVCaptureDevice.default(.builtInDualCamera, for: AVMediaType.video,position: .back)
+//        }
         
         guard let captureDevice = device else {
             print("Error: no video devices available")
@@ -75,6 +88,7 @@ public class VideoCapture: NSObject{
             captureSession.addOutput(videoOutput)
         }
         
+        //Giles5 - commented out depthdata
         if captureSession.canAddOutput(depthDataOutput) {
             depthDataOutput.setDelegate(self, callbackQueue: queue)
             depthDataOutput.isFilteringEnabled = true
@@ -155,6 +169,8 @@ func saveImage(image: UIImage, id:String) -> Bool {
     }
 }
 
+// Giles5 - depthdata printed here
+
 extension VideoCapture: AVCaptureDepthDataOutputDelegate {
     public func depthDataOutput(_ output: AVCaptureDepthDataOutput, didOutput depthData: AVDepthData, timestamp: CMTime, connection: AVCaptureConnection) {
         var convertedDepth : AVDepthData
@@ -164,17 +180,22 @@ extension VideoCapture: AVCaptureDepthDataOutputDelegate {
         } else {
             convertedDepth = depthData
         }
-        
+
         let depthDataMap = convertedDepth.depthDataMap
         //depthDataMap.clamp()
         let depthMap=CIImage(cvPixelBuffer: depthDataMap)
         let depthUIImage = UIImage(ciImage: depthMap)
+        
+       // Giles5 - depth image printed at this point, was printing "true" statements and crashing the system
         print(saveImage(image: depthUIImage, id:"\(Date())"))
+        print("depth")
+        
+        
 //        e [UIImagePNGRepresentation(depthUIImage), writeToFile:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingString:@"/myImage.png"] atomically:NO];
 //        let width = CVPixelBufferGetWidth(depthDataMap) //768 on an iPhone 7+
 //        let height = CVPixelBufferGetHeight(depthDataMap) //576 on an iPhone 7+
 //        CVPixelBufferLockBaseAddress(depthDataMap, CVPixelBufferLockFlags(rawValue: 0))
-
+//
 //        // Convert the base address to a safe pointer of the appropriate type
 //        let floatBuffer = unsafeBitCast(CVPixelBufferGetBaseAddress(depthDataMap), to: UnsafeMutablePointer<Float32>.self)
 //

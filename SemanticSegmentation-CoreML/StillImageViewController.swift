@@ -36,6 +36,8 @@ class CustomTapGestureRecognizer: UITapGestureRecognizer {
     var objs = [String]()
     var mults = [Float]()
     var x_vals = [Double]()
+    // Giles added object size
+    var objSize = [Double] ()
 }
 
 class StillImageViewController: UIViewController,
@@ -62,7 +64,8 @@ class StillImageViewController: UIViewController,
     public static func getImageFrameCoordinates(segmentationmap: MLMultiArray, row: Int, col: Int) -> (d: Dictionary<Int, Int>, x: Dictionary<Int, Int>, y: Dictionary<Int, Int>) {
         
         // Deep exhibit 5
-        var depthMap = AVCaptureDepthDataOutput()
+        //Giles5 depthdata commented out
+        //var depthMap = AVCaptureDepthDataOutput()
         
         // Deep exhibit 6
         var d=[Int: Int](),x=[Int:Int](),y=[Int:Int]()
@@ -95,26 +98,49 @@ class StillImageViewController: UIViewController,
      * Returns the recognized object name and the pitch multiplier to use when speaking it out
      *
      */
-    public static func getObjectAndPitchMultiplier(k: Int, v: Int, x: Dictionary<Int, Int>, y: Dictionary<Int, Int>, row: Int, col: Int) -> (obj: String, mult_val: Float, xValue: Double) {
+    public static func getObjectAndPitchMultiplier(k: Int, v: Int, x: Dictionary<Int, Int>, y: Dictionary<Int, Int>, row: Int, col: Int) -> (obj: String, mult_val: Float, xValue: Double, sizes: Double) {
         let objects=["background", "aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat", "chair", "cow", "table", "dog", "horse", "motorbike", "person", "plant", "sheep", "sofa", "train", "tv"]
         
         let b : Int = x[k] ?? 0
         let c : Int = y[k] ?? 0
         let size=Double(v)/(Double(row)*Double(col))
-        print(objects[k], Double(b)/Double(v)/Double(col),1-Double(c)/Double(v)/Double(row))
+//        print(objects[k], Double(b)/Double(v)/Double(col),1-Double(c)/Double(v)/Double(row))
 //        print("The multiplier y is ")
 //        print(1-Double(c)/Double(v)/Double(row))
         // Deep exhibit 6
-        if size>=0.05 {
-            print("The size is ")
-            print(Double(v))
-            print(size)
-        }
+//        if size>=0.05 {
+//            print("The size is ")
+//            print(Double(v))
+//            print(size)
+//        }
+//        // Giles added below
+//        else {
+//            print("The size is \(size), which is too small")
+//        }
         // old: multiplier: Float((y[k]!))+0.7
         let multiplier = 0.7 + Float(1-Double(c)/Double(v)/Double(row))
         let xValue = Double(b)/Double(v)/Double(col)
         
-        return (objects[k], multiplier, xValue)
+//        if objects[k].contains("Person")
+//        if objects[k] == "Person" {
+//            print("YOYO a person is HERE YO")
+//
+////                    rtPersonDetectorPan = (Float(truncating: XXX_put_person.Xpos_in_here_XXX))
+////            let wherePerson:Int = objs.firstIndex(of: "Person")!
+////            let panningPerson = x_vals[wherePerson]
+////            let panningPersonFloat = (Float(panningPerson))
+//
+//            let urlPerson = Bundle.main.url(forResource: "5piano", withExtension: "wav")
+//            rtPersonDetector = try! AVAudioPlayer(contentsOf: urlPerson!)
+//            rtPersonDetector.pan = 0.0
+////            rtPersonDetector.pan = panningPersonFloat
+//            rtPersonDetector.volume = 1.0
+//            rtPersonDetector.play()
+//            usleep(1000000)
+//        }
+        
+        // Giles added size return value
+        return (objects[k], multiplier, xValue, size)
         
     }
     
@@ -127,7 +153,8 @@ class StillImageViewController: UIViewController,
     // Deep exhibit 7
     public static func speak(text: String, multiplier: Float) {
         let utterance = AVSpeechUtterance(string: String(text))
-
+// Giles 11/23 - enter volume in speak () above and set values throughout code in live metal
+        //        utterance.volume = 1.0
         utterance.rate = 0.5 // slows down speaking speed
         utterance.pitchMultiplier = multiplier; // 0.7
         if (multiplier < 1) {
@@ -142,9 +169,9 @@ class StillImageViewController: UIViewController,
     public static func horizontalPosition(posValue:Double) -> String {
         if (posValue <= 0.20) {
             return "far left"
-        } else if (posValue <= 0.46) {
+        } else if (posValue <= 0.40) {
             return "left"
-        } else if (posValue <= 0.54) {
+        } else if (posValue <= 0.60) {
             return "middle"
         } else if (posValue <= 0.80) {
             return "right"
@@ -238,10 +265,13 @@ extension StillImageViewController {
             let x = imageFrameCoordinates.x
             let y = imageFrameCoordinates.y
 
-            print("any value",terminator: Array(repeating: "\n", count: 100).joined())
+            //Giles commenting out
+//            print("any value",terminator: Array(repeating: "\n", count: 100).joined())
             var objs = [String]()
             var mults = [Float]()
             var x_vals = [Double]()
+            // Giles added
+            var objSizes = [Double]()
             
             for (k,v) in d {
                 if (k==0) {
@@ -252,10 +282,14 @@ extension StillImageViewController {
                 let obj = objectAndPitchMultiplier.obj
                 let mult_val = objectAndPitchMultiplier.mult_val
                 let x_val = objectAndPitchMultiplier.xValue
+                // Giles to add - was size, now sizes
+                let objSize = objectAndPitchMultiplier.sizes
 
                 objs.append(obj)
                 mults.append(mult_val)
                 x_vals.append(x_val)
+                // Giles added append objSize
+                objSizes.append(objSize)
                 //StillImageViewController.speak(text: obj, multiplier: mult_val)
                 
                 // DispatchQueue.main.asyncAfter(deadline: .now() + 2)
@@ -266,6 +300,8 @@ extension StillImageViewController {
             tap.objs = objs
             tap.mults = mults
             tap.x_vals = x_vals
+            // Giles added object size
+            tap.objSize = objSizes
             tap.numberOfTapsRequired = 2
             view.addGestureRecognizer(tap)
             
@@ -283,6 +319,8 @@ extension StillImageViewController {
                 let obj = sender.objs[i]
                 let mult = sender.mults[i]
                 let x_value = sender.x_vals[i]
+                
+                // Giles thought - does objSize etc need to be here
                 StillImageViewController.speak(text: (obj + " " + StillImageViewController.horizontalPosition(posValue:x_value)), multiplier: mult)
             }
         }

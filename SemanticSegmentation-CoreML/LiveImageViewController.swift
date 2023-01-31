@@ -117,6 +117,7 @@ class LiveImageViewController: UIViewController, AVSpeechSynthesizerDelegate {
     func setUpCamera() {
         videoCapture = VideoCapture()
         videoCapture.delegate = self
+        // Giles was 50
         videoCapture.fps = 50
         videoCapture.setUp(sessionPreset: .vga640x480) { success in
             
@@ -191,11 +192,12 @@ extension LiveImageViewController {
             let d = imageFrameCoordinates.d
             let x = imageFrameCoordinates.x
             let y = imageFrameCoordinates.y
-            
-            print("any value",terminator: Array(repeating: "\n", count: 100).joined())
+            //Giles 1a commenting out
+//            print("any value",terminator: Array(repeating: "\n", count: 100).joined())
             var objs = [String]()
             var mults = [Float]()
             var x_vals = [Double]()
+            var objSizes = [Double]()
             
             for (k,v) in d {
                 if (k==0) {
@@ -205,10 +207,12 @@ extension LiveImageViewController {
                 let obj = objectAndPitchMultiplier.obj
                 let mult_val = objectAndPitchMultiplier.mult_val
                 let x_val = objectAndPitchMultiplier.xValue
+                let objSize = objectAndPitchMultiplier.sizes
                 
                 objs.append(obj)
                 mults.append(mult_val)
                 x_vals.append(x_val)
+                objSizes.append(objSize)
                 //StillImageViewController.speak(text: obj, multiplier: mult_val)
             }
             
@@ -217,6 +221,7 @@ extension LiveImageViewController {
             tap.objs = objs
             tap.mults = mults
             tap.x_vals = x_vals
+            tap.objSize = objSizes
             tap.numberOfTapsRequired = 2
             view.addGestureRecognizer(tap)
             
@@ -240,12 +245,25 @@ extension LiveImageViewController {
     // Deep exhibit 2
     @objc func tapSelector(sender: CustomTapGestureRecognizer) {
         let cnt = sender.objs.count
+        // Giles - print statement below to check the list sizes for count and objSize.count
+        //print(cnt,sender.objSize.count)
         if cnt == 0 {
             StillImageViewController.speak(text: "No Objects Identified", multiplier: 1)
         } else {
             var sorted=sender.x_vals.enumerated().sorted(by:{$0.element < $1.element})
             for (i,e) in sorted {
                 let obj = sender.objs[i]
+                //Giles added Deans code for object ignoring
+                if (obj=="aeroplane" || obj=="sheep" || obj=="cow" || obj=="horse") {
+                    continue;
+                }
+                //Giles - Size ignoring could be put here, but size values need to be accessible here. Append size to sender.
+                let objSizeCheck = sender.objSize[i]
+                //Giles added Deans code for object ignoring based on size, was < 0.05 but too conservative
+                if objSizeCheck <= 0.02 {
+                    continue;
+                }
+                
                 let mult = sender.mults[i]
                 let x_value = sender.x_vals[i]//sender.x_vals[i]
                 // StillImageViewController.speak(text: (obj+String(x_value)), multiplier: mult)
@@ -261,6 +279,7 @@ extension LiveImageViewController {
 // MARK: - 📏(Performance Measurement) Delegate
 extension LiveImageViewController: 📏Delegate {
     func updateMeasure(inferenceTime: Double, executionTime: Double, fps: Int, objectIndex: Int) {
+        // Giles - links to fpsLabel
         self.maf1.append(element: Int(inferenceTime*1000.0))
         self.maf2.append(element: Int(executionTime*1000.0))
         self.maf3.append(element: fps)

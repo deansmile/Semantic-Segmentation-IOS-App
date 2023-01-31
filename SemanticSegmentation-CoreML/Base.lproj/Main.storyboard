@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uso-ud-VWq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uso-ud-VWq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -157,7 +156,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mtkView contentMode="scaleAspectFit" colorPixelFormat="BGRA8Unorm" depthStencilPixelFormat="Depth32Float" translatesAutoresizingMaskIntoConstraints="NO" id="jI5-DE-WCD" customClass="MetalVideoView" customModule="SemanticSegmentation_CoreML" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="414" height="709"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="743"/>
                             </mtkView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCS-RK-DG2">
                                 <rect key="frame" x="0.0" y="25" width="414" height="25"/>
@@ -209,7 +208,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZRo-26-PEe"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ZRo-26-PEe" firstAttribute="trailing" secondItem="jI5-DE-WCD" secondAttribute="trailing" id="4mM-Rd-x23"/>
                             <constraint firstItem="6Mn-At-kPt" firstAttribute="leading" secondItem="ZRo-26-PEe" secondAttribute="leading" constant="20" id="Kyw-Ny-ibC"/>

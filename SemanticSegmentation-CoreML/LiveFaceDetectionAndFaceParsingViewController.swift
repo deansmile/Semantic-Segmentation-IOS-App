@@ -84,6 +84,7 @@ class LiveFaceDetectionAndFaceParsingViewController: UIViewController {
     func setUpCamera() {
         videoCapture = VideoCapture()
         videoCapture.delegate = self
+        //Giles5 - was 50
         videoCapture.fps = 50
         videoCapture.setUpCamera(sessionPreset: .vga640x480, position: .front) { (success) in
             if success {

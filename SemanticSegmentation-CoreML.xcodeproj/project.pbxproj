@@ -7,6 +7,209 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4698D93E28AAEE1D00618E27 /* 1bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4698D93428AAEE1C00618E27 /* 1bird.wav */; };
+		4698D93F28AAEE1D00618E27 /* 1breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4698D93528AAEE1C00618E27 /* 1breath.wav */; };
+		4698D94028AAEE1D00618E27 /* 1flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4698D93628AAEE1C00618E27 /* 1flute.wav */; };
+		4698D94128AAEE1D00618E27 /* 1chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4698D93728AAEE1D00618E27 /* 1chair.wav */; };
+		4698D94228AAEE1D00618E27 /* 1trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4698D93828AAEE1D00618E27 /* 1trumpet.wav */; };
+		4698D94328AAEE1D00618E27 /* 1cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4698D93928AAEE1D00618E27 /* 1cat.wav */; };
+		4698D94428AAEE1D00618E27 /* 1bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4698D93A28AAEE1D00618E27 /* 1bottle.wav */; };
+		4698D94628AAEE1D00618E27 /* 1piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4698D93C28AAEE1D00618E27 /* 1piano.wav */; };
+		4698D94728AAEE1D00618E27 /* 1buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4698D93D28AAEE1D00618E27 /* 1buzz.wav */; };
+		46B2744728B8455400A217A0 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2744628B8455400A217A0 /* 1.wav */; };
+		46B2744A28B8458E00A217A0 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2744928B8458E00A217A0 /* 2.wav */; };
+		46B2745D28B845CA00A217A0 /* 18.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2744B28B845C700A217A0 /* 18.wav */; };
+		46B2745E28B845CA00A217A0 /* 6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2744C28B845C700A217A0 /* 6.wav */; };
+		46B2745F28B845CA00A217A0 /* 11.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2744D28B845C800A217A0 /* 11.wav */; };
+		46B2746028B845CA00A217A0 /* 19.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2744E28B845C800A217A0 /* 19.wav */; };
+		46B2746128B845CA00A217A0 /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2744F28B845C800A217A0 /* 4.wav */; };
+		46B2746228B845CA00A217A0 /* 15.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2745028B845C800A217A0 /* 15.wav */; };
+		46B2746328B845CA00A217A0 /* 10.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2745128B845C800A217A0 /* 10.wav */; };
+		46B2746428B845CA00A217A0 /* 12.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2745228B845C800A217A0 /* 12.wav */; };
+		46B2746528B845CA00A217A0 /* 16.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2745328B845C800A217A0 /* 16.wav */; };
+		46B2746628B845CA00A217A0 /* 9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2745428B845C800A217A0 /* 9.wav */; };
+		46B2746728B845CA00A217A0 /* 14.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2745528B845C900A217A0 /* 14.wav */; };
+		46B2746828B845CA00A217A0 /* 8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2745628B845C900A217A0 /* 8.wav */; };
+		46B2746928B845CA00A217A0 /* 20.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2745728B845C900A217A0 /* 20.wav */; };
+		46B2746A28B845CA00A217A0 /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2745828B845C900A217A0 /* 3.wav */; };
+		46B2746B28B845CA00A217A0 /* 13.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2745928B845C900A217A0 /* 13.wav */; };
+		46B2746C28B845CA00A217A0 /* 5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2745A28B845C900A217A0 /* 5.wav */; };
+		46B2746D28B845CA00A217A0 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2745B28B845C900A217A0 /* 7.wav */; };
+		46B2746E28B845CA00A217A0 /* 17.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B2745C28B845C900A217A0 /* 17.wav */; };
+		46E5B56228AC1823004BD0AE /* 6flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B50828AC181D004BD0AE /* 6flute.wav */; };
+		46E5B56328AC1823004BD0AE /* 2bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B50928AC181E004BD0AE /* 2bird.wav */; };
+		46E5B56428AC1823004BD0AE /* 3breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B50A28AC181E004BD0AE /* 3breath.wav */; };
+		46E5B56528AC1823004BD0AE /* 10trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B50B28AC181E004BD0AE /* 10trumpet.wav */; };
+		46E5B56628AC1823004BD0AE /* 5bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B50C28AC181E004BD0AE /* 5bird.wav */; };
+		46E5B56728AC1823004BD0AE /* 2bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B50D28AC181E004BD0AE /* 2bottle.wav */; };
+		46E5B56828AC1823004BD0AE /* 4buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B50E28AC181E004BD0AE /* 4buzz.wav */; };
+		46E5B56928AC1823004BD0AE /* 6trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B50F28AC181E004BD0AE /* 6trumpet.wav */; };
+		46E5B56A28AC1823004BD0AE /* 9bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B51028AC181E004BD0AE /* 9bird.wav */; };
+		46E5B56B28AC1823004BD0AE /* 4cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B51128AC181E004BD0AE /* 4cat.wav */; };
+		46E5B56C28AC1823004BD0AE /* 5bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B51228AC181E004BD0AE /* 5bottle.wav */; };
+		46E5B56D28AC1823004BD0AE /* 2cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B51328AC181E004BD0AE /* 2cat.wav */; };
+		46E5B56E28AC1823004BD0AE /* 3buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B51428AC181E004BD0AE /* 3buzz.wav */; };
+		46E5B56F28AC1823004BD0AE /* 3cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B51528AC181E004BD0AE /* 3cat.wav */; };
+		46E5B57028AC1823004BD0AE /* 6piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B51628AC181E004BD0AE /* 6piano.wav */; };
+		46E5B57128AC1823004BD0AE /* 7chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B51728AC181E004BD0AE /* 7chair.wav */; };
+		46E5B57328AC1823004BD0AE /* 3trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B51928AC181E004BD0AE /* 3trumpet.wav */; };
+		46E5B57428AC1823004BD0AE /* 7bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B51A28AC181E004BD0AE /* 7bottle.wav */; };
+		46E5B57528AC1823004BD0AE /* 3bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B51B28AC181E004BD0AE /* 3bird.wav */; };
+		46E5B57728AC1823004BD0AE /* 8bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B51D28AC181F004BD0AE /* 8bottle.wav */; };
+		46E5B57928AC1823004BD0AE /* 7bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B51F28AC181F004BD0AE /* 7bird.wav */; };
+		46E5B57A28AC1823004BD0AE /* 8flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B52028AC181F004BD0AE /* 8flute.wav */; };
+		46E5B57C28AC1823004BD0AE /* 7buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B52228AC181F004BD0AE /* 7buzz.wav */; };
+		46E5B57D28AC1823004BD0AE /* 9breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B52328AC181F004BD0AE /* 9breath.wav */; };
+		46E5B57F28AC1823004BD0AE /* 2buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B52528AC181F004BD0AE /* 2buzz.wav */; };
+		46E5B58028AC1823004BD0AE /* 8bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B52628AC181F004BD0AE /* 8bird.wav */; };
+		46E5B58128AC1823004BD0AE /* 10bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B52728AC181F004BD0AE /* 10bottle.wav */; };
+		46E5B58228AC1823004BD0AE /* 10chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B52828AC181F004BD0AE /* 10chair.wav */; };
+		46E5B58328AC1823004BD0AE /* 8breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B52928AC181F004BD0AE /* 8breath.wav */; };
+		46E5B58428AC1823004BD0AE /* 4bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B52A28AC181F004BD0AE /* 4bottle.wav */; };
+		46E5B58628AC1823004BD0AE /* 8buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B52C28AC181F004BD0AE /* 8buzz.wav */; };
+		46E5B58728AC1823004BD0AE /* 5flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B52D28AC181F004BD0AE /* 5flute.wav */; };
+		46E5B58828AC1823004BD0AE /* 5piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B52E28AC1820004BD0AE /* 5piano.wav */; };
+		46E5B58928AC1823004BD0AE /* 7flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B52F28AC1820004BD0AE /* 7flute.wav */; };
+		46E5B58B28AC1823004BD0AE /* 7breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B53128AC1820004BD0AE /* 7breath.wav */; };
+		46E5B58C28AC1823004BD0AE /* 8piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B53228AC1820004BD0AE /* 8piano.wav */; };
+		46E5B58D28AC1823004BD0AE /* 9buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B53328AC1820004BD0AE /* 9buzz.wav */; };
+		46E5B58E28AC1823004BD0AE /* 9chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B53428AC1820004BD0AE /* 9chair.wav */; };
+		46E5B59028AC1823004BD0AE /* 10cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B53628AC1820004BD0AE /* 10cat.wav */; };
+		46E5B59128AC1823004BD0AE /* 9cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B53728AC1820004BD0AE /* 9cat.wav */; };
+		46E5B59228AC1823004BD0AE /* 5cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B53828AC1820004BD0AE /* 5cat.wav */; };
+		46E5B59328AC1823004BD0AE /* 9trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B53928AC1820004BD0AE /* 9trumpet.wav */; };
+		46E5B59428AC1823004BD0AE /* 8cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B53A28AC1820004BD0AE /* 8cat.wav */; };
+		46E5B59528AC1823004BD0AE /* 3piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B53B28AC1820004BD0AE /* 3piano.wav */; };
+		46E5B59628AC1823004BD0AE /* 9bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B53C28AC1820004BD0AE /* 9bottle.wav */; };
+		46E5B59728AC1823004BD0AE /* 3chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B53D28AC1820004BD0AE /* 3chair.wav */; };
+		46E5B59828AC1823004BD0AE /* 6breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B53E28AC1820004BD0AE /* 6breath.wav */; };
+		46E5B59928AC1823004BD0AE /* 6bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B53F28AC1820004BD0AE /* 6bottle.wav */; };
+		46E5B59A28AC1823004BD0AE /* 4trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54028AC1821004BD0AE /* 4trumpet.wav */; };
+		46E5B59B28AC1823004BD0AE /* 4flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54128AC1821004BD0AE /* 4flute.wav */; };
+		46E5B59C28AC1823004BD0AE /* 4breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54228AC1821004BD0AE /* 4breath.wav */; };
+		46E5B59D28AC1823004BD0AE /* 10piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54328AC1821004BD0AE /* 10piano.wav */; };
+		46E5B59E28AC1823004BD0AE /* 7trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54428AC1821004BD0AE /* 7trumpet.wav */; };
+		46E5B59F28AC1823004BD0AE /* 8trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54528AC1821004BD0AE /* 8trumpet.wav */; };
+		46E5B5A028AC1823004BD0AE /* 7cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54628AC1821004BD0AE /* 7cat.wav */; };
+		46E5B5A128AC1823004BD0AE /* 2breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54728AC1821004BD0AE /* 2breath.wav */; };
+		46E5B5A228AC1823004BD0AE /* 4piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54828AC1821004BD0AE /* 4piano.wav */; };
+		46E5B5A328AC1823004BD0AE /* 10breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54928AC1821004BD0AE /* 10breath.wav */; };
+		46E5B5A428AC1823004BD0AE /* 3bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54A28AC1821004BD0AE /* 3bottle.wav */; };
+		46E5B5A528AC1823004BD0AE /* 6cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54B28AC1821004BD0AE /* 6cat.wav */; };
+		46E5B5A628AC1823004BD0AE /* 6chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54C28AC1821004BD0AE /* 6chair.wav */; };
+		46E5B5A728AC1823004BD0AE /* 6bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54D28AC1821004BD0AE /* 6bird.wav */; };
+		46E5B5A828AC1823004BD0AE /* 9piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54E28AC1821004BD0AE /* 9piano.wav */; };
+		46E5B5A928AC1823004BD0AE /* 5breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B54F28AC1821004BD0AE /* 5breath.wav */; };
+		46E5B5AA28AC1823004BD0AE /* 5buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55028AC1821004BD0AE /* 5buzz.wav */; };
+		46E5B5AB28AC1823004BD0AE /* 5chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55128AC1821004BD0AE /* 5chair.wav */; };
+		46E5B5AD28AC1823004BD0AE /* 2flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55328AC1822004BD0AE /* 2flute.wav */; };
+		46E5B5AE28AC1823004BD0AE /* 10buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55428AC1822004BD0AE /* 10buzz.wav */; };
+		46E5B5AF28AC1823004BD0AE /* 4bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55528AC1822004BD0AE /* 4bird.wav */; };
+		46E5B5B028AC1823004BD0AE /* 2chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55628AC1822004BD0AE /* 2chair.wav */; };
+		46E5B5B128AC1823004BD0AE /* 3flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55728AC1822004BD0AE /* 3flute.wav */; };
+		46E5B5B228AC1823004BD0AE /* 4chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55828AC1822004BD0AE /* 4chair.wav */; };
+		46E5B5B328AC1823004BD0AE /* 5trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55928AC1822004BD0AE /* 5trumpet.wav */; };
+		46E5B5B428AC1823004BD0AE /* 8chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55A28AC1822004BD0AE /* 8chair.wav */; };
+		46E5B5B528AC1823004BD0AE /* 2trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55B28AC1822004BD0AE /* 2trumpet.wav */; };
+		46E5B5B628AC1823004BD0AE /* 9flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55C28AC1822004BD0AE /* 9flute.wav */; };
+		46E5B5B728AC1823004BD0AE /* 10flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55D28AC1822004BD0AE /* 10flute.wav */; };
+		46E5B5B828AC1823004BD0AE /* 7piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55E28AC1822004BD0AE /* 7piano.wav */; };
+		46E5B5B928AC1823004BD0AE /* 2piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B55F28AC1822004BD0AE /* 2piano.wav */; };
+		46E5B5BA28AC1823004BD0AE /* 6buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B56028AC1822004BD0AE /* 6buzz.wav */; };
+		46E5B5BB28AC1823004BD0AE /* 10bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B56128AC1822004BD0AE /* 10bird.wav */; };
+		46E5B62028AC1865004BD0AE /* 15piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5BC28AC185F004BD0AE /* 15piano.wav */; };
+		46E5B62128AC1865004BD0AE /* 16chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5BD28AC185F004BD0AE /* 16chair.wav */; };
+		46E5B62228AC1865004BD0AE /* 19cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5BE28AC185F004BD0AE /* 19cat.wav */; };
+		46E5B62328AC1865004BD0AE /* 17piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5BF28AC185F004BD0AE /* 17piano.wav */; };
+		46E5B62428AC1865004BD0AE /* 20bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5C028AC185F004BD0AE /* 20bottle.wav */; };
+		46E5B62528AC1865004BD0AE /* 12breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5C128AC185F004BD0AE /* 12breath.wav */; };
+		46E5B62628AC1865004BD0AE /* 12flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5C228AC185F004BD0AE /* 12flute.wav */; };
+		46E5B62728AC1865004BD0AE /* 11chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5C328AC185F004BD0AE /* 11chair.wav */; };
+		46E5B62828AC1865004BD0AE /* 11buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5C428AC185F004BD0AE /* 11buzz.wav */; };
+		46E5B62928AC1865004BD0AE /* 11trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5C528AC1860004BD0AE /* 11trumpet.wav */; };
+		46E5B62A28AC1865004BD0AE /* 14breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5C628AC1860004BD0AE /* 14breath.wav */; };
+		46E5B62B28AC1865004BD0AE /* 15trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5C728AC1860004BD0AE /* 15trumpet.wav */; };
+		46E5B62C28AC1865004BD0AE /* 19breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5C828AC1860004BD0AE /* 19breath.wav */; };
+		46E5B62D28AC1865004BD0AE /* 18trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5C928AC1860004BD0AE /* 18trumpet.wav */; };
+		46E5B62E28AC1865004BD0AE /* 12piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5CA28AC1860004BD0AE /* 12piano.wav */; };
+		46E5B62F28AC1865004BD0AE /* 17flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5CB28AC1860004BD0AE /* 17flute.wav */; };
+		46E5B63028AC1865004BD0AE /* 13bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5CC28AC1860004BD0AE /* 13bird.wav */; };
+		46E5B63128AC1865004BD0AE /* 17trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5CD28AC1860004BD0AE /* 17trumpet.wav */; };
+		46E5B63228AC1865004BD0AE /* 13flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5CE28AC1860004BD0AE /* 13flute.wav */; };
+		46E5B63328AC1865004BD0AE /* 15cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5CF28AC1860004BD0AE /* 15cat.wav */; };
+		46E5B63428AC1865004BD0AE /* 18breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5D028AC1860004BD0AE /* 18breath.wav */; };
+		46E5B63528AC1865004BD0AE /* 12cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5D128AC1860004BD0AE /* 12cat.wav */; };
+		46E5B63628AC1865004BD0AE /* 19buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5D228AC1861004BD0AE /* 19buzz.wav */; };
+		46E5B63728AC1865004BD0AE /* 13breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5D328AC1861004BD0AE /* 13breath.wav */; };
+		46E5B63828AC1865004BD0AE /* 16trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5D428AC1861004BD0AE /* 16trumpet.wav */; };
+		46E5B63928AC1865004BD0AE /* 12buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5D528AC1861004BD0AE /* 12buzz.wav */; };
+		46E5B63A28AC1865004BD0AE /* 20breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5D628AC1861004BD0AE /* 20breath.wav */; };
+		46E5B63B28AC1865004BD0AE /* 20trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5D728AC1861004BD0AE /* 20trumpet.wav */; };
+		46E5B63C28AC1865004BD0AE /* 17chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5D828AC1861004BD0AE /* 17chair.wav */; };
+		46E5B63D28AC1865004BD0AE /* 14bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5D928AC1861004BD0AE /* 14bird.wav */; };
+		46E5B63E28AC1865004BD0AE /* 16bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5DA28AC1861004BD0AE /* 16bird.wav */; };
+		46E5B63F28AC1865004BD0AE /* 11bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5DB28AC1861004BD0AE /* 11bird.wav */; };
+		46E5B64228AC1865004BD0AE /* 11flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5DE28AC1861004BD0AE /* 11flute.wav */; };
+		46E5B64428AC1865004BD0AE /* 16breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5E028AC1862004BD0AE /* 16breath.wav */; };
+		46E5B64628AC1865004BD0AE /* 15buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5E228AC1862004BD0AE /* 15buzz.wav */; };
+		46E5B64828AC1865004BD0AE /* 17buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5E428AC1862004BD0AE /* 17buzz.wav */; };
+		46E5B64928AC1865004BD0AE /* 15bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5E528AC1862004BD0AE /* 15bird.wav */; };
+		46E5B64A28AC1865004BD0AE /* 12bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5E628AC1862004BD0AE /* 12bird.wav */; };
+		46E5B64B28AC1865004BD0AE /* 18buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5E728AC1862004BD0AE /* 18buzz.wav */; };
+		46E5B64C28AC1865004BD0AE /* 11cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5E828AC1862004BD0AE /* 11cat.wav */; };
+		46E5B64D28AC1865004BD0AE /* 12trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5E928AC1862004BD0AE /* 12trumpet.wav */; };
+		46E5B64E28AC1865004BD0AE /* 14buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5EA28AC1862004BD0AE /* 14buzz.wav */; };
+		46E5B64F28AC1865004BD0AE /* 19bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5EB28AC1862004BD0AE /* 19bottle.wav */; };
+		46E5B65028AC1865004BD0AE /* 13piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5EC28AC1862004BD0AE /* 13piano.wav */; };
+		46E5B65128AC1865004BD0AE /* 15bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5ED28AC1862004BD0AE /* 15bottle.wav */; };
+		46E5B65228AC1865004BD0AE /* 18bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5EE28AC1862004BD0AE /* 18bottle.wav */; };
+		46E5B65328AC1865004BD0AE /* 15flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5EF28AC1862004BD0AE /* 15flute.wav */; };
+		46E5B65428AC1865004BD0AE /* 14cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5F028AC1862004BD0AE /* 14cat.wav */; };
+		46E5B65528AC1865004BD0AE /* 20bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5F128AC1862004BD0AE /* 20bird.wav */; };
+		46E5B65628AC1865004BD0AE /* 13trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5F228AC1863004BD0AE /* 13trumpet.wav */; };
+		46E5B65728AC1865004BD0AE /* 11bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5F328AC1863004BD0AE /* 11bottle.wav */; };
+		46E5B65828AC1865004BD0AE /* 18flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5F428AC1863004BD0AE /* 18flute.wav */; };
+		46E5B65928AC1865004BD0AE /* 18chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5F528AC1863004BD0AE /* 18chair.wav */; };
+		46E5B65A28AC1865004BD0AE /* 11piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5F628AC1863004BD0AE /* 11piano.wav */; };
+		46E5B65B28AC1865004BD0AE /* 19bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5F728AC1863004BD0AE /* 19bird.wav */; };
+		46E5B65C28AC1865004BD0AE /* 16bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5F828AC1863004BD0AE /* 16bottle.wav */; };
+		46E5B65D28AC1865004BD0AE /* 19piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5F928AC1863004BD0AE /* 19piano.wav */; };
+		46E5B65E28AC1865004BD0AE /* 18bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5FA28AC1863004BD0AE /* 18bird.wav */; };
+		46E5B66028AC1865004BD0AE /* 15chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5FC28AC1863004BD0AE /* 15chair.wav */; };
+		46E5B66128AC1865004BD0AE /* 11breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5FD28AC1863004BD0AE /* 11breath.wav */; };
+		46E5B66228AC1865004BD0AE /* 20cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5FE28AC1863004BD0AE /* 20cat.wav */; };
+		46E5B66328AC1865004BD0AE /* 15breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B5FF28AC1863004BD0AE /* 15breath.wav */; };
+		46E5B66428AC1865004BD0AE /* 20flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60028AC1863004BD0AE /* 20flute.wav */; };
+		46E5B66528AC1865004BD0AE /* 14flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60128AC1863004BD0AE /* 14flute.wav */; };
+		46E5B66628AC1865004BD0AE /* 14piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60228AC1863004BD0AE /* 14piano.wav */; };
+		46E5B66728AC1865004BD0AE /* 20chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60328AC1863004BD0AE /* 20chair.wav */; };
+		46E5B66828AC1865004BD0AE /* 17bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60428AC1863004BD0AE /* 17bird.wav */; };
+		46E5B66928AC1865004BD0AE /* 16buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60528AC1863004BD0AE /* 16buzz.wav */; };
+		46E5B66A28AC1865004BD0AE /* 17bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60628AC1863004BD0AE /* 17bottle.wav */; };
+		46E5B66B28AC1865004BD0AE /* 13bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60728AC1863004BD0AE /* 13bottle.wav */; };
+		46E5B66C28AC1865004BD0AE /* 19chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60828AC1864004BD0AE /* 19chair.wav */; };
+		46E5B66D28AC1865004BD0AE /* 16cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60928AC1864004BD0AE /* 16cat.wav */; };
+		46E5B66E28AC1865004BD0AE /* 16piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60A28AC1864004BD0AE /* 16piano.wav */; };
+		46E5B67028AC1865004BD0AE /* 19flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60C28AC1864004BD0AE /* 19flute.wav */; };
+		46E5B67128AC1865004BD0AE /* 20piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60D28AC1864004BD0AE /* 20piano.wav */; };
+		46E5B67228AC1865004BD0AE /* 14bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60E28AC1864004BD0AE /* 14bottle.wav */; };
+		46E5B67328AC1865004BD0AE /* 13buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B60F28AC1864004BD0AE /* 13buzz.wav */; };
+		46E5B67428AC1865004BD0AE /* 20buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B61028AC1864004BD0AE /* 20buzz.wav */; };
+		46E5B67528AC1865004BD0AE /* 12chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B61128AC1864004BD0AE /* 12chair.wav */; };
+		46E5B67628AC1865004BD0AE /* 12bottle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B61228AC1864004BD0AE /* 12bottle.wav */; };
+		46E5B67728AC1865004BD0AE /* 14chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B61328AC1864004BD0AE /* 14chair.wav */; };
+		46E5B67828AC1865004BD0AE /* 17breath.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B61428AC1864004BD0AE /* 17breath.wav */; };
+		46E5B67928AC1865004BD0AE /* 14trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B61528AC1864004BD0AE /* 14trumpet.wav */; };
+		46E5B67B28AC1865004BD0AE /* 16flute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B61728AC1864004BD0AE /* 16flute.wav */; };
+		46E5B67C28AC1865004BD0AE /* 13cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B61828AC1864004BD0AE /* 13cat.wav */; };
+		46E5B67D28AC1865004BD0AE /* 18piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B61928AC1864004BD0AE /* 18piano.wav */; };
+		46E5B67E28AC1865004BD0AE /* 17cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B61A28AC1865004BD0AE /* 17cat.wav */; };
+		46E5B68028AC1865004BD0AE /* 19trumpet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B61C28AC1865004BD0AE /* 19trumpet.wav */; };
+		46E5B68128AC1865004BD0AE /* 13chair.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B61D28AC1865004BD0AE /* 13chair.wav */; };
+		46E5B68228AC1865004BD0AE /* 18cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B61E28AC1865004BD0AE /* 18cat.wav */; };
+		46E5B68528AC1C0A004BD0AE /* drum.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E5B68428AC1C0A004BD0AE /* drum.wav */; };
+		46EBF357289C9986006E778B /* 100.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46EBF34C289C9986006E778B /* 100.wav */; };
+		46EBF359289CA7E9006E778B /* Shutter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46EBF358289CA7E9006E778B /* Shutter.mp3 */; };
 		71BBE04422E33B2500E74F11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BBE04322E33B2500E74F11 /* AppDelegate.swift */; };
 		71BBE04622E33B2500E74F11 /* LiveImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BBE04522E33B2500E74F11 /* LiveImageViewController.swift */; };
 		71BBE04922E33B2500E74F11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BBE04722E33B2500E74F11 /* Main.storyboard */; };
@@ -37,6 +240,229 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4698D93428AAEE1C00618E27 /* 1bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1bird.wav; sourceTree = "<group>"; };
+		4698D93528AAEE1C00618E27 /* 1breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1breath.wav; sourceTree = "<group>"; };
+		4698D93628AAEE1C00618E27 /* 1flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1flute.wav; sourceTree = "<group>"; };
+		4698D93728AAEE1D00618E27 /* 1chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1chair.wav; sourceTree = "<group>"; };
+		4698D93828AAEE1D00618E27 /* 1trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1trumpet.wav; sourceTree = "<group>"; };
+		4698D93928AAEE1D00618E27 /* 1cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1cat.wav; sourceTree = "<group>"; };
+		4698D93A28AAEE1D00618E27 /* 1bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1bottle.wav; sourceTree = "<group>"; };
+		4698D93B28AAEE1D00618E27 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 1.wav; path = "../../../All together/1.wav"; sourceTree = "<group>"; };
+		4698D93C28AAEE1D00618E27 /* 1piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1piano.wav; sourceTree = "<group>"; };
+		4698D93D28AAEE1D00618E27 /* 1buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1buzz.wav; sourceTree = "<group>"; };
+		46B2744628B8455400A217A0 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 1.wav; path = "SemanticSegmentation-CoreML/AudioFiles/1.wav"; sourceTree = "<group>"; };
+		46B2744928B8458E00A217A0 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 2.wav; path = "SemanticSegmentation-CoreML/AudioFiles/2.wav"; sourceTree = "<group>"; };
+		46B2744B28B845C700A217A0 /* 18.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 18.wav; path = "SemanticSegmentation-CoreML/AudioFiles/18.wav"; sourceTree = "<group>"; };
+		46B2744C28B845C700A217A0 /* 6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 6.wav; path = "SemanticSegmentation-CoreML/AudioFiles/6.wav"; sourceTree = "<group>"; };
+		46B2744D28B845C800A217A0 /* 11.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 11.wav; path = "SemanticSegmentation-CoreML/AudioFiles/11.wav"; sourceTree = "<group>"; };
+		46B2744E28B845C800A217A0 /* 19.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 19.wav; path = "SemanticSegmentation-CoreML/AudioFiles/19.wav"; sourceTree = "<group>"; };
+		46B2744F28B845C800A217A0 /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 4.wav; path = "SemanticSegmentation-CoreML/AudioFiles/4.wav"; sourceTree = "<group>"; };
+		46B2745028B845C800A217A0 /* 15.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 15.wav; path = "SemanticSegmentation-CoreML/AudioFiles/15.wav"; sourceTree = "<group>"; };
+		46B2745128B845C800A217A0 /* 10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 10.wav; path = "SemanticSegmentation-CoreML/AudioFiles/10.wav"; sourceTree = "<group>"; };
+		46B2745228B845C800A217A0 /* 12.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 12.wav; path = "SemanticSegmentation-CoreML/AudioFiles/12.wav"; sourceTree = "<group>"; };
+		46B2745328B845C800A217A0 /* 16.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 16.wav; path = "SemanticSegmentation-CoreML/AudioFiles/16.wav"; sourceTree = "<group>"; };
+		46B2745428B845C800A217A0 /* 9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 9.wav; path = "SemanticSegmentation-CoreML/AudioFiles/9.wav"; sourceTree = "<group>"; };
+		46B2745528B845C900A217A0 /* 14.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 14.wav; path = "SemanticSegmentation-CoreML/AudioFiles/14.wav"; sourceTree = "<group>"; };
+		46B2745628B845C900A217A0 /* 8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 8.wav; path = "SemanticSegmentation-CoreML/AudioFiles/8.wav"; sourceTree = "<group>"; };
+		46B2745728B845C900A217A0 /* 20.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 20.wav; path = "SemanticSegmentation-CoreML/AudioFiles/20.wav"; sourceTree = "<group>"; };
+		46B2745828B845C900A217A0 /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3.wav; path = "SemanticSegmentation-CoreML/AudioFiles/3.wav"; sourceTree = "<group>"; };
+		46B2745928B845C900A217A0 /* 13.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 13.wav; path = "SemanticSegmentation-CoreML/AudioFiles/13.wav"; sourceTree = "<group>"; };
+		46B2745A28B845C900A217A0 /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 5.wav; path = "SemanticSegmentation-CoreML/AudioFiles/5.wav"; sourceTree = "<group>"; };
+		46B2745B28B845C900A217A0 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 7.wav; path = "SemanticSegmentation-CoreML/AudioFiles/7.wav"; sourceTree = "<group>"; };
+		46B2745C28B845C900A217A0 /* 17.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 17.wav; path = "SemanticSegmentation-CoreML/AudioFiles/17.wav"; sourceTree = "<group>"; };
+		46E5B50828AC181D004BD0AE /* 6flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6flute.wav; sourceTree = "<group>"; };
+		46E5B50928AC181E004BD0AE /* 2bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2bird.wav; sourceTree = "<group>"; };
+		46E5B50A28AC181E004BD0AE /* 3breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3breath.wav; sourceTree = "<group>"; };
+		46E5B50B28AC181E004BD0AE /* 10trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10trumpet.wav; sourceTree = "<group>"; };
+		46E5B50C28AC181E004BD0AE /* 5bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5bird.wav; sourceTree = "<group>"; };
+		46E5B50D28AC181E004BD0AE /* 2bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2bottle.wav; sourceTree = "<group>"; };
+		46E5B50E28AC181E004BD0AE /* 4buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4buzz.wav; sourceTree = "<group>"; };
+		46E5B50F28AC181E004BD0AE /* 6trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6trumpet.wav; sourceTree = "<group>"; };
+		46E5B51028AC181E004BD0AE /* 9bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9bird.wav; sourceTree = "<group>"; };
+		46E5B51128AC181E004BD0AE /* 4cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4cat.wav; sourceTree = "<group>"; };
+		46E5B51228AC181E004BD0AE /* 5bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5bottle.wav; sourceTree = "<group>"; };
+		46E5B51328AC181E004BD0AE /* 2cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2cat.wav; sourceTree = "<group>"; };
+		46E5B51428AC181E004BD0AE /* 3buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3buzz.wav; sourceTree = "<group>"; };
+		46E5B51528AC181E004BD0AE /* 3cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3cat.wav; sourceTree = "<group>"; };
+		46E5B51628AC181E004BD0AE /* 6piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6piano.wav; sourceTree = "<group>"; };
+		46E5B51728AC181E004BD0AE /* 7chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7chair.wav; sourceTree = "<group>"; };
+		46E5B51828AC181E004BD0AE /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 4.wav; path = "../../../All together/4.wav"; sourceTree = "<group>"; };
+		46E5B51928AC181E004BD0AE /* 3trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3trumpet.wav; sourceTree = "<group>"; };
+		46E5B51A28AC181E004BD0AE /* 7bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7bottle.wav; sourceTree = "<group>"; };
+		46E5B51B28AC181E004BD0AE /* 3bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3bird.wav; sourceTree = "<group>"; };
+		46E5B51C28AC181F004BD0AE /* 8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 8.wav; path = "../../../All together/8.wav"; sourceTree = "<group>"; };
+		46E5B51D28AC181F004BD0AE /* 8bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8bottle.wav; sourceTree = "<group>"; };
+		46E5B51E28AC181F004BD0AE /* 9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 9.wav; path = "../../../All together/9.wav"; sourceTree = "<group>"; };
+		46E5B51F28AC181F004BD0AE /* 7bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7bird.wav; sourceTree = "<group>"; };
+		46E5B52028AC181F004BD0AE /* 8flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8flute.wav; sourceTree = "<group>"; };
+		46E5B52128AC181F004BD0AE /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 5.wav; path = "../../../All together/5.wav"; sourceTree = "<group>"; };
+		46E5B52228AC181F004BD0AE /* 7buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7buzz.wav; sourceTree = "<group>"; };
+		46E5B52328AC181F004BD0AE /* 9breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9breath.wav; sourceTree = "<group>"; };
+		46E5B52428AC181F004BD0AE /* 6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 6.wav; path = "../../../All together/6.wav"; sourceTree = "<group>"; };
+		46E5B52528AC181F004BD0AE /* 2buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2buzz.wav; sourceTree = "<group>"; };
+		46E5B52628AC181F004BD0AE /* 8bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8bird.wav; sourceTree = "<group>"; };
+		46E5B52728AC181F004BD0AE /* 10bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10bottle.wav; sourceTree = "<group>"; };
+		46E5B52828AC181F004BD0AE /* 10chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10chair.wav; sourceTree = "<group>"; };
+		46E5B52928AC181F004BD0AE /* 8breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8breath.wav; sourceTree = "<group>"; };
+		46E5B52A28AC181F004BD0AE /* 4bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4bottle.wav; sourceTree = "<group>"; };
+		46E5B52B28AC181F004BD0AE /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 7.wav; path = "../../../All together/7.wav"; sourceTree = "<group>"; };
+		46E5B52C28AC181F004BD0AE /* 8buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8buzz.wav; sourceTree = "<group>"; };
+		46E5B52D28AC181F004BD0AE /* 5flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5flute.wav; sourceTree = "<group>"; };
+		46E5B52E28AC1820004BD0AE /* 5piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5piano.wav; sourceTree = "<group>"; };
+		46E5B52F28AC1820004BD0AE /* 7flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7flute.wav; sourceTree = "<group>"; };
+		46E5B53028AC1820004BD0AE /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3.wav; path = "../../../All together/3.wav"; sourceTree = "<group>"; };
+		46E5B53128AC1820004BD0AE /* 7breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7breath.wav; sourceTree = "<group>"; };
+		46E5B53228AC1820004BD0AE /* 8piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8piano.wav; sourceTree = "<group>"; };
+		46E5B53328AC1820004BD0AE /* 9buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9buzz.wav; sourceTree = "<group>"; };
+		46E5B53428AC1820004BD0AE /* 9chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9chair.wav; sourceTree = "<group>"; };
+		46E5B53528AC1820004BD0AE /* 10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 10.wav; path = "../../../All together/10.wav"; sourceTree = "<group>"; };
+		46E5B53628AC1820004BD0AE /* 10cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10cat.wav; sourceTree = "<group>"; };
+		46E5B53728AC1820004BD0AE /* 9cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9cat.wav; sourceTree = "<group>"; };
+		46E5B53828AC1820004BD0AE /* 5cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5cat.wav; sourceTree = "<group>"; };
+		46E5B53928AC1820004BD0AE /* 9trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9trumpet.wav; sourceTree = "<group>"; };
+		46E5B53A28AC1820004BD0AE /* 8cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8cat.wav; sourceTree = "<group>"; };
+		46E5B53B28AC1820004BD0AE /* 3piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3piano.wav; sourceTree = "<group>"; };
+		46E5B53C28AC1820004BD0AE /* 9bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9bottle.wav; sourceTree = "<group>"; };
+		46E5B53D28AC1820004BD0AE /* 3chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3chair.wav; sourceTree = "<group>"; };
+		46E5B53E28AC1820004BD0AE /* 6breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6breath.wav; sourceTree = "<group>"; };
+		46E5B53F28AC1820004BD0AE /* 6bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6bottle.wav; sourceTree = "<group>"; };
+		46E5B54028AC1821004BD0AE /* 4trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4trumpet.wav; sourceTree = "<group>"; };
+		46E5B54128AC1821004BD0AE /* 4flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4flute.wav; sourceTree = "<group>"; };
+		46E5B54228AC1821004BD0AE /* 4breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4breath.wav; sourceTree = "<group>"; };
+		46E5B54328AC1821004BD0AE /* 10piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10piano.wav; sourceTree = "<group>"; };
+		46E5B54428AC1821004BD0AE /* 7trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7trumpet.wav; sourceTree = "<group>"; };
+		46E5B54528AC1821004BD0AE /* 8trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8trumpet.wav; sourceTree = "<group>"; };
+		46E5B54628AC1821004BD0AE /* 7cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7cat.wav; sourceTree = "<group>"; };
+		46E5B54728AC1821004BD0AE /* 2breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2breath.wav; sourceTree = "<group>"; };
+		46E5B54828AC1821004BD0AE /* 4piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4piano.wav; sourceTree = "<group>"; };
+		46E5B54928AC1821004BD0AE /* 10breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10breath.wav; sourceTree = "<group>"; };
+		46E5B54A28AC1821004BD0AE /* 3bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3bottle.wav; sourceTree = "<group>"; };
+		46E5B54B28AC1821004BD0AE /* 6cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6cat.wav; sourceTree = "<group>"; };
+		46E5B54C28AC1821004BD0AE /* 6chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6chair.wav; sourceTree = "<group>"; };
+		46E5B54D28AC1821004BD0AE /* 6bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6bird.wav; sourceTree = "<group>"; };
+		46E5B54E28AC1821004BD0AE /* 9piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9piano.wav; sourceTree = "<group>"; };
+		46E5B54F28AC1821004BD0AE /* 5breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5breath.wav; sourceTree = "<group>"; };
+		46E5B55028AC1821004BD0AE /* 5buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5buzz.wav; sourceTree = "<group>"; };
+		46E5B55128AC1821004BD0AE /* 5chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5chair.wav; sourceTree = "<group>"; };
+		46E5B55228AC1821004BD0AE /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 2.wav; path = "../../../All together/2.wav"; sourceTree = "<group>"; };
+		46E5B55328AC1822004BD0AE /* 2flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2flute.wav; sourceTree = "<group>"; };
+		46E5B55428AC1822004BD0AE /* 10buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10buzz.wav; sourceTree = "<group>"; };
+		46E5B55528AC1822004BD0AE /* 4bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4bird.wav; sourceTree = "<group>"; };
+		46E5B55628AC1822004BD0AE /* 2chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2chair.wav; sourceTree = "<group>"; };
+		46E5B55728AC1822004BD0AE /* 3flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3flute.wav; sourceTree = "<group>"; };
+		46E5B55828AC1822004BD0AE /* 4chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4chair.wav; sourceTree = "<group>"; };
+		46E5B55928AC1822004BD0AE /* 5trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5trumpet.wav; sourceTree = "<group>"; };
+		46E5B55A28AC1822004BD0AE /* 8chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8chair.wav; sourceTree = "<group>"; };
+		46E5B55B28AC1822004BD0AE /* 2trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2trumpet.wav; sourceTree = "<group>"; };
+		46E5B55C28AC1822004BD0AE /* 9flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9flute.wav; sourceTree = "<group>"; };
+		46E5B55D28AC1822004BD0AE /* 10flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10flute.wav; sourceTree = "<group>"; };
+		46E5B55E28AC1822004BD0AE /* 7piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7piano.wav; sourceTree = "<group>"; };
+		46E5B55F28AC1822004BD0AE /* 2piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2piano.wav; sourceTree = "<group>"; };
+		46E5B56028AC1822004BD0AE /* 6buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6buzz.wav; sourceTree = "<group>"; };
+		46E5B56128AC1822004BD0AE /* 10bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10bird.wav; sourceTree = "<group>"; };
+		46E5B5BC28AC185F004BD0AE /* 15piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 15piano.wav; sourceTree = "<group>"; };
+		46E5B5BD28AC185F004BD0AE /* 16chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 16chair.wav; sourceTree = "<group>"; };
+		46E5B5BE28AC185F004BD0AE /* 19cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 19cat.wav; sourceTree = "<group>"; };
+		46E5B5BF28AC185F004BD0AE /* 17piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 17piano.wav; sourceTree = "<group>"; };
+		46E5B5C028AC185F004BD0AE /* 20bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 20bottle.wav; sourceTree = "<group>"; };
+		46E5B5C128AC185F004BD0AE /* 12breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 12breath.wav; sourceTree = "<group>"; };
+		46E5B5C228AC185F004BD0AE /* 12flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 12flute.wav; sourceTree = "<group>"; };
+		46E5B5C328AC185F004BD0AE /* 11chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 11chair.wav; sourceTree = "<group>"; };
+		46E5B5C428AC185F004BD0AE /* 11buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 11buzz.wav; sourceTree = "<group>"; };
+		46E5B5C528AC1860004BD0AE /* 11trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 11trumpet.wav; sourceTree = "<group>"; };
+		46E5B5C628AC1860004BD0AE /* 14breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 14breath.wav; sourceTree = "<group>"; };
+		46E5B5C728AC1860004BD0AE /* 15trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 15trumpet.wav; sourceTree = "<group>"; };
+		46E5B5C828AC1860004BD0AE /* 19breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 19breath.wav; sourceTree = "<group>"; };
+		46E5B5C928AC1860004BD0AE /* 18trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 18trumpet.wav; sourceTree = "<group>"; };
+		46E5B5CA28AC1860004BD0AE /* 12piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 12piano.wav; sourceTree = "<group>"; };
+		46E5B5CB28AC1860004BD0AE /* 17flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 17flute.wav; sourceTree = "<group>"; };
+		46E5B5CC28AC1860004BD0AE /* 13bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 13bird.wav; sourceTree = "<group>"; };
+		46E5B5CD28AC1860004BD0AE /* 17trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 17trumpet.wav; sourceTree = "<group>"; };
+		46E5B5CE28AC1860004BD0AE /* 13flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 13flute.wav; sourceTree = "<group>"; };
+		46E5B5CF28AC1860004BD0AE /* 15cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 15cat.wav; sourceTree = "<group>"; };
+		46E5B5D028AC1860004BD0AE /* 18breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 18breath.wav; sourceTree = "<group>"; };
+		46E5B5D128AC1860004BD0AE /* 12cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 12cat.wav; sourceTree = "<group>"; };
+		46E5B5D228AC1861004BD0AE /* 19buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 19buzz.wav; sourceTree = "<group>"; };
+		46E5B5D328AC1861004BD0AE /* 13breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 13breath.wav; sourceTree = "<group>"; };
+		46E5B5D428AC1861004BD0AE /* 16trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 16trumpet.wav; sourceTree = "<group>"; };
+		46E5B5D528AC1861004BD0AE /* 12buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 12buzz.wav; sourceTree = "<group>"; };
+		46E5B5D628AC1861004BD0AE /* 20breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 20breath.wav; sourceTree = "<group>"; };
+		46E5B5D728AC1861004BD0AE /* 20trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 20trumpet.wav; sourceTree = "<group>"; };
+		46E5B5D828AC1861004BD0AE /* 17chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 17chair.wav; sourceTree = "<group>"; };
+		46E5B5D928AC1861004BD0AE /* 14bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 14bird.wav; sourceTree = "<group>"; };
+		46E5B5DA28AC1861004BD0AE /* 16bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 16bird.wav; sourceTree = "<group>"; };
+		46E5B5DB28AC1861004BD0AE /* 11bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 11bird.wav; sourceTree = "<group>"; };
+		46E5B5DC28AC1861004BD0AE /* 11.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 11.wav; path = "../../../All together/11 to 20/11.wav"; sourceTree = "<group>"; };
+		46E5B5DD28AC1861004BD0AE /* 13.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 13.wav; path = "../../../All together/11 to 20/13.wav"; sourceTree = "<group>"; };
+		46E5B5DE28AC1861004BD0AE /* 11flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 11flute.wav; sourceTree = "<group>"; };
+		46E5B5DF28AC1861004BD0AE /* 18.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 18.wav; path = "../../../All together/11 to 20/18.wav"; sourceTree = "<group>"; };
+		46E5B5E028AC1862004BD0AE /* 16breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 16breath.wav; sourceTree = "<group>"; };
+		46E5B5E128AC1862004BD0AE /* 14.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 14.wav; path = "../../../All together/11 to 20/14.wav"; sourceTree = "<group>"; };
+		46E5B5E228AC1862004BD0AE /* 15buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 15buzz.wav; sourceTree = "<group>"; };
+		46E5B5E328AC1862004BD0AE /* 19.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 19.wav; path = "../../../All together/11 to 20/19.wav"; sourceTree = "<group>"; };
+		46E5B5E428AC1862004BD0AE /* 17buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 17buzz.wav; sourceTree = "<group>"; };
+		46E5B5E528AC1862004BD0AE /* 15bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 15bird.wav; sourceTree = "<group>"; };
+		46E5B5E628AC1862004BD0AE /* 12bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 12bird.wav; sourceTree = "<group>"; };
+		46E5B5E728AC1862004BD0AE /* 18buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 18buzz.wav; sourceTree = "<group>"; };
+		46E5B5E828AC1862004BD0AE /* 11cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 11cat.wav; sourceTree = "<group>"; };
+		46E5B5E928AC1862004BD0AE /* 12trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 12trumpet.wav; sourceTree = "<group>"; };
+		46E5B5EA28AC1862004BD0AE /* 14buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 14buzz.wav; sourceTree = "<group>"; };
+		46E5B5EB28AC1862004BD0AE /* 19bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 19bottle.wav; sourceTree = "<group>"; };
+		46E5B5EC28AC1862004BD0AE /* 13piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 13piano.wav; sourceTree = "<group>"; };
+		46E5B5ED28AC1862004BD0AE /* 15bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 15bottle.wav; sourceTree = "<group>"; };
+		46E5B5EE28AC1862004BD0AE /* 18bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 18bottle.wav; sourceTree = "<group>"; };
+		46E5B5EF28AC1862004BD0AE /* 15flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 15flute.wav; sourceTree = "<group>"; };
+		46E5B5F028AC1862004BD0AE /* 14cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 14cat.wav; sourceTree = "<group>"; };
+		46E5B5F128AC1862004BD0AE /* 20bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 20bird.wav; sourceTree = "<group>"; };
+		46E5B5F228AC1863004BD0AE /* 13trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 13trumpet.wav; sourceTree = "<group>"; };
+		46E5B5F328AC1863004BD0AE /* 11bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 11bottle.wav; sourceTree = "<group>"; };
+		46E5B5F428AC1863004BD0AE /* 18flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 18flute.wav; sourceTree = "<group>"; };
+		46E5B5F528AC1863004BD0AE /* 18chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 18chair.wav; sourceTree = "<group>"; };
+		46E5B5F628AC1863004BD0AE /* 11piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 11piano.wav; sourceTree = "<group>"; };
+		46E5B5F728AC1863004BD0AE /* 19bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 19bird.wav; sourceTree = "<group>"; };
+		46E5B5F828AC1863004BD0AE /* 16bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 16bottle.wav; sourceTree = "<group>"; };
+		46E5B5F928AC1863004BD0AE /* 19piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 19piano.wav; sourceTree = "<group>"; };
+		46E5B5FA28AC1863004BD0AE /* 18bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 18bird.wav; sourceTree = "<group>"; };
+		46E5B5FB28AC1863004BD0AE /* 20.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 20.wav; path = "../../../All together/11 to 20/20.wav"; sourceTree = "<group>"; };
+		46E5B5FC28AC1863004BD0AE /* 15chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 15chair.wav; sourceTree = "<group>"; };
+		46E5B5FD28AC1863004BD0AE /* 11breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 11breath.wav; sourceTree = "<group>"; };
+		46E5B5FE28AC1863004BD0AE /* 20cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 20cat.wav; sourceTree = "<group>"; };
+		46E5B5FF28AC1863004BD0AE /* 15breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 15breath.wav; sourceTree = "<group>"; };
+		46E5B60028AC1863004BD0AE /* 20flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 20flute.wav; sourceTree = "<group>"; };
+		46E5B60128AC1863004BD0AE /* 14flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 14flute.wav; sourceTree = "<group>"; };
+		46E5B60228AC1863004BD0AE /* 14piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 14piano.wav; sourceTree = "<group>"; };
+		46E5B60328AC1863004BD0AE /* 20chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 20chair.wav; sourceTree = "<group>"; };
+		46E5B60428AC1863004BD0AE /* 17bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 17bird.wav; sourceTree = "<group>"; };
+		46E5B60528AC1863004BD0AE /* 16buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 16buzz.wav; sourceTree = "<group>"; };
+		46E5B60628AC1863004BD0AE /* 17bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 17bottle.wav; sourceTree = "<group>"; };
+		46E5B60728AC1863004BD0AE /* 13bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 13bottle.wav; sourceTree = "<group>"; };
+		46E5B60828AC1864004BD0AE /* 19chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 19chair.wav; sourceTree = "<group>"; };
+		46E5B60928AC1864004BD0AE /* 16cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 16cat.wav; sourceTree = "<group>"; };
+		46E5B60A28AC1864004BD0AE /* 16piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 16piano.wav; sourceTree = "<group>"; };
+		46E5B60B28AC1864004BD0AE /* 15.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 15.wav; path = "../../../All together/11 to 20/15.wav"; sourceTree = "<group>"; };
+		46E5B60C28AC1864004BD0AE /* 19flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 19flute.wav; sourceTree = "<group>"; };
+		46E5B60D28AC1864004BD0AE /* 20piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 20piano.wav; sourceTree = "<group>"; };
+		46E5B60E28AC1864004BD0AE /* 14bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 14bottle.wav; sourceTree = "<group>"; };
+		46E5B60F28AC1864004BD0AE /* 13buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 13buzz.wav; sourceTree = "<group>"; };
+		46E5B61028AC1864004BD0AE /* 20buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 20buzz.wav; sourceTree = "<group>"; };
+		46E5B61128AC1864004BD0AE /* 12chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 12chair.wav; sourceTree = "<group>"; };
+		46E5B61228AC1864004BD0AE /* 12bottle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 12bottle.wav; sourceTree = "<group>"; };
+		46E5B61328AC1864004BD0AE /* 14chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 14chair.wav; sourceTree = "<group>"; };
+		46E5B61428AC1864004BD0AE /* 17breath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 17breath.wav; sourceTree = "<group>"; };
+		46E5B61528AC1864004BD0AE /* 14trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 14trumpet.wav; sourceTree = "<group>"; };
+		46E5B61628AC1864004BD0AE /* 16.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 16.wav; path = "../../../All together/11 to 20/16.wav"; sourceTree = "<group>"; };
+		46E5B61728AC1864004BD0AE /* 16flute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 16flute.wav; sourceTree = "<group>"; };
+		46E5B61828AC1864004BD0AE /* 13cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 13cat.wav; sourceTree = "<group>"; };
+		46E5B61928AC1864004BD0AE /* 18piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 18piano.wav; sourceTree = "<group>"; };
+		46E5B61A28AC1865004BD0AE /* 17cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 17cat.wav; sourceTree = "<group>"; };
+		46E5B61B28AC1865004BD0AE /* 17.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 17.wav; path = "../../../All together/11 to 20/17.wav"; sourceTree = "<group>"; };
+		46E5B61C28AC1865004BD0AE /* 19trumpet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 19trumpet.wav; sourceTree = "<group>"; };
+		46E5B61D28AC1865004BD0AE /* 13chair.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 13chair.wav; sourceTree = "<group>"; };
+		46E5B61E28AC1865004BD0AE /* 18cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 18cat.wav; sourceTree = "<group>"; };
+		46E5B61F28AC1865004BD0AE /* 12.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 12.wav; path = "../../../All together/11 to 20/12.wav"; sourceTree = "<group>"; };
+		46E5B68428AC1C0A004BD0AE /* drum.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum.wav; sourceTree = "<group>"; };
+		46EBF34C289C9986006E778B /* 100.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 100.wav; sourceTree = "<group>"; };
+		46EBF358289CA7E9006E778B /* Shutter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shutter.mp3; sourceTree = "<group>"; };
 		71BBE04022E33B2500E74F11 /* SemanticSegmentation-CoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SemanticSegmentation-CoreML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BBE04322E33B2500E74F11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71BBE04522E33B2500E74F11 /* LiveImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveImageViewController.swift; sourceTree = "<group>"; };
@@ -79,9 +505,239 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46EBF9862899D21E0030C0E7 /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				46E5B68428AC1C0A004BD0AE /* drum.wav */,
+				4698D93B28AAEE1D00618E27 /* 1.wav */,
+				4698D93428AAEE1C00618E27 /* 1bird.wav */,
+				4698D93A28AAEE1D00618E27 /* 1bottle.wav */,
+				4698D93528AAEE1C00618E27 /* 1breath.wav */,
+				4698D93D28AAEE1D00618E27 /* 1buzz.wav */,
+				4698D93928AAEE1D00618E27 /* 1cat.wav */,
+				4698D93728AAEE1D00618E27 /* 1chair.wav */,
+				4698D93628AAEE1C00618E27 /* 1flute.wav */,
+				4698D93C28AAEE1D00618E27 /* 1piano.wav */,
+				4698D93828AAEE1D00618E27 /* 1trumpet.wav */,
+				46E5B55228AC1821004BD0AE /* 2.wav */,
+				46E5B50928AC181E004BD0AE /* 2bird.wav */,
+				46E5B50D28AC181E004BD0AE /* 2bottle.wav */,
+				46E5B54728AC1821004BD0AE /* 2breath.wav */,
+				46E5B52528AC181F004BD0AE /* 2buzz.wav */,
+				46E5B51328AC181E004BD0AE /* 2cat.wav */,
+				46E5B55628AC1822004BD0AE /* 2chair.wav */,
+				46E5B55328AC1822004BD0AE /* 2flute.wav */,
+				46E5B55F28AC1822004BD0AE /* 2piano.wav */,
+				46E5B55B28AC1822004BD0AE /* 2trumpet.wav */,
+				46E5B53028AC1820004BD0AE /* 3.wav */,
+				46E5B51B28AC181E004BD0AE /* 3bird.wav */,
+				46E5B54A28AC1821004BD0AE /* 3bottle.wav */,
+				46E5B50A28AC181E004BD0AE /* 3breath.wav */,
+				46E5B51428AC181E004BD0AE /* 3buzz.wav */,
+				46E5B51528AC181E004BD0AE /* 3cat.wav */,
+				46E5B53D28AC1820004BD0AE /* 3chair.wav */,
+				46E5B55728AC1822004BD0AE /* 3flute.wav */,
+				46E5B53B28AC1820004BD0AE /* 3piano.wav */,
+				46E5B51928AC181E004BD0AE /* 3trumpet.wav */,
+				46E5B51828AC181E004BD0AE /* 4.wav */,
+				46E5B55528AC1822004BD0AE /* 4bird.wav */,
+				46E5B52A28AC181F004BD0AE /* 4bottle.wav */,
+				46E5B54228AC1821004BD0AE /* 4breath.wav */,
+				46E5B50E28AC181E004BD0AE /* 4buzz.wav */,
+				46E5B51128AC181E004BD0AE /* 4cat.wav */,
+				46E5B55828AC1822004BD0AE /* 4chair.wav */,
+				46E5B54128AC1821004BD0AE /* 4flute.wav */,
+				46E5B54828AC1821004BD0AE /* 4piano.wav */,
+				46E5B54028AC1821004BD0AE /* 4trumpet.wav */,
+				46E5B52128AC181F004BD0AE /* 5.wav */,
+				46E5B50C28AC181E004BD0AE /* 5bird.wav */,
+				46E5B51228AC181E004BD0AE /* 5bottle.wav */,
+				46E5B54F28AC1821004BD0AE /* 5breath.wav */,
+				46E5B55028AC1821004BD0AE /* 5buzz.wav */,
+				46E5B53828AC1820004BD0AE /* 5cat.wav */,
+				46E5B55128AC1821004BD0AE /* 5chair.wav */,
+				46E5B52D28AC181F004BD0AE /* 5flute.wav */,
+				46E5B52E28AC1820004BD0AE /* 5piano.wav */,
+				46E5B55928AC1822004BD0AE /* 5trumpet.wav */,
+				46E5B52428AC181F004BD0AE /* 6.wav */,
+				46E5B54D28AC1821004BD0AE /* 6bird.wav */,
+				46E5B53F28AC1820004BD0AE /* 6bottle.wav */,
+				46E5B53E28AC1820004BD0AE /* 6breath.wav */,
+				46E5B56028AC1822004BD0AE /* 6buzz.wav */,
+				46E5B54B28AC1821004BD0AE /* 6cat.wav */,
+				46E5B54C28AC1821004BD0AE /* 6chair.wav */,
+				46E5B50828AC181D004BD0AE /* 6flute.wav */,
+				46E5B51628AC181E004BD0AE /* 6piano.wav */,
+				46E5B50F28AC181E004BD0AE /* 6trumpet.wav */,
+				46E5B52B28AC181F004BD0AE /* 7.wav */,
+				46E5B51F28AC181F004BD0AE /* 7bird.wav */,
+				46E5B51A28AC181E004BD0AE /* 7bottle.wav */,
+				46E5B53128AC1820004BD0AE /* 7breath.wav */,
+				46E5B52228AC181F004BD0AE /* 7buzz.wav */,
+				46E5B54628AC1821004BD0AE /* 7cat.wav */,
+				46E5B51728AC181E004BD0AE /* 7chair.wav */,
+				46E5B52F28AC1820004BD0AE /* 7flute.wav */,
+				46E5B55E28AC1822004BD0AE /* 7piano.wav */,
+				46E5B54428AC1821004BD0AE /* 7trumpet.wav */,
+				46E5B51C28AC181F004BD0AE /* 8.wav */,
+				46E5B52628AC181F004BD0AE /* 8bird.wav */,
+				46E5B51D28AC181F004BD0AE /* 8bottle.wav */,
+				46E5B52928AC181F004BD0AE /* 8breath.wav */,
+				46E5B52C28AC181F004BD0AE /* 8buzz.wav */,
+				46E5B53A28AC1820004BD0AE /* 8cat.wav */,
+				46E5B55A28AC1822004BD0AE /* 8chair.wav */,
+				46E5B52028AC181F004BD0AE /* 8flute.wav */,
+				46E5B53228AC1820004BD0AE /* 8piano.wav */,
+				46E5B54528AC1821004BD0AE /* 8trumpet.wav */,
+				46E5B51E28AC181F004BD0AE /* 9.wav */,
+				46E5B51028AC181E004BD0AE /* 9bird.wav */,
+				46E5B53C28AC1820004BD0AE /* 9bottle.wav */,
+				46E5B52328AC181F004BD0AE /* 9breath.wav */,
+				46E5B53328AC1820004BD0AE /* 9buzz.wav */,
+				46E5B53728AC1820004BD0AE /* 9cat.wav */,
+				46E5B53428AC1820004BD0AE /* 9chair.wav */,
+				46E5B55C28AC1822004BD0AE /* 9flute.wav */,
+				46E5B54E28AC1821004BD0AE /* 9piano.wav */,
+				46E5B53928AC1820004BD0AE /* 9trumpet.wav */,
+				46E5B53528AC1820004BD0AE /* 10.wav */,
+				46E5B56128AC1822004BD0AE /* 10bird.wav */,
+				46E5B52728AC181F004BD0AE /* 10bottle.wav */,
+				46E5B54928AC1821004BD0AE /* 10breath.wav */,
+				46E5B55428AC1822004BD0AE /* 10buzz.wav */,
+				46E5B53628AC1820004BD0AE /* 10cat.wav */,
+				46E5B52828AC181F004BD0AE /* 10chair.wav */,
+				46E5B55D28AC1822004BD0AE /* 10flute.wav */,
+				46E5B54328AC1821004BD0AE /* 10piano.wav */,
+				46E5B50B28AC181E004BD0AE /* 10trumpet.wav */,
+				46E5B5DC28AC1861004BD0AE /* 11.wav */,
+				46E5B5DB28AC1861004BD0AE /* 11bird.wav */,
+				46E5B5F328AC1863004BD0AE /* 11bottle.wav */,
+				46E5B5FD28AC1863004BD0AE /* 11breath.wav */,
+				46E5B5C428AC185F004BD0AE /* 11buzz.wav */,
+				46E5B5E828AC1862004BD0AE /* 11cat.wav */,
+				46E5B5C328AC185F004BD0AE /* 11chair.wav */,
+				46E5B5DE28AC1861004BD0AE /* 11flute.wav */,
+				46E5B5F628AC1863004BD0AE /* 11piano.wav */,
+				46E5B5C528AC1860004BD0AE /* 11trumpet.wav */,
+				46E5B61F28AC1865004BD0AE /* 12.wav */,
+				46E5B5E628AC1862004BD0AE /* 12bird.wav */,
+				46E5B61228AC1864004BD0AE /* 12bottle.wav */,
+				46E5B5C128AC185F004BD0AE /* 12breath.wav */,
+				46E5B5D528AC1861004BD0AE /* 12buzz.wav */,
+				46E5B5D128AC1860004BD0AE /* 12cat.wav */,
+				46E5B61128AC1864004BD0AE /* 12chair.wav */,
+				46E5B5C228AC185F004BD0AE /* 12flute.wav */,
+				46E5B5CA28AC1860004BD0AE /* 12piano.wav */,
+				46E5B5E928AC1862004BD0AE /* 12trumpet.wav */,
+				46E5B5DD28AC1861004BD0AE /* 13.wav */,
+				46E5B5CC28AC1860004BD0AE /* 13bird.wav */,
+				46E5B60728AC1863004BD0AE /* 13bottle.wav */,
+				46E5B5D328AC1861004BD0AE /* 13breath.wav */,
+				46E5B60F28AC1864004BD0AE /* 13buzz.wav */,
+				46E5B61828AC1864004BD0AE /* 13cat.wav */,
+				46E5B61D28AC1865004BD0AE /* 13chair.wav */,
+				46E5B5CE28AC1860004BD0AE /* 13flute.wav */,
+				46E5B5EC28AC1862004BD0AE /* 13piano.wav */,
+				46E5B5F228AC1863004BD0AE /* 13trumpet.wav */,
+				46E5B5E128AC1862004BD0AE /* 14.wav */,
+				46E5B5D928AC1861004BD0AE /* 14bird.wav */,
+				46E5B60E28AC1864004BD0AE /* 14bottle.wav */,
+				46E5B5C628AC1860004BD0AE /* 14breath.wav */,
+				46E5B5EA28AC1862004BD0AE /* 14buzz.wav */,
+				46E5B5F028AC1862004BD0AE /* 14cat.wav */,
+				46E5B61328AC1864004BD0AE /* 14chair.wav */,
+				46E5B60128AC1863004BD0AE /* 14flute.wav */,
+				46E5B60228AC1863004BD0AE /* 14piano.wav */,
+				46E5B61528AC1864004BD0AE /* 14trumpet.wav */,
+				46E5B60B28AC1864004BD0AE /* 15.wav */,
+				46E5B5E528AC1862004BD0AE /* 15bird.wav */,
+				46E5B5ED28AC1862004BD0AE /* 15bottle.wav */,
+				46E5B5FF28AC1863004BD0AE /* 15breath.wav */,
+				46E5B5E228AC1862004BD0AE /* 15buzz.wav */,
+				46E5B5CF28AC1860004BD0AE /* 15cat.wav */,
+				46E5B5FC28AC1863004BD0AE /* 15chair.wav */,
+				46E5B5EF28AC1862004BD0AE /* 15flute.wav */,
+				46E5B5BC28AC185F004BD0AE /* 15piano.wav */,
+				46E5B5C728AC1860004BD0AE /* 15trumpet.wav */,
+				46E5B61628AC1864004BD0AE /* 16.wav */,
+				46E5B5DA28AC1861004BD0AE /* 16bird.wav */,
+				46E5B5F828AC1863004BD0AE /* 16bottle.wav */,
+				46E5B5E028AC1862004BD0AE /* 16breath.wav */,
+				46E5B60528AC1863004BD0AE /* 16buzz.wav */,
+				46E5B60928AC1864004BD0AE /* 16cat.wav */,
+				46E5B5BD28AC185F004BD0AE /* 16chair.wav */,
+				46E5B61728AC1864004BD0AE /* 16flute.wav */,
+				46E5B60A28AC1864004BD0AE /* 16piano.wav */,
+				46E5B5D428AC1861004BD0AE /* 16trumpet.wav */,
+				46E5B61B28AC1865004BD0AE /* 17.wav */,
+				46E5B60428AC1863004BD0AE /* 17bird.wav */,
+				46E5B60628AC1863004BD0AE /* 17bottle.wav */,
+				46E5B61428AC1864004BD0AE /* 17breath.wav */,
+				46E5B5E428AC1862004BD0AE /* 17buzz.wav */,
+				46E5B61A28AC1865004BD0AE /* 17cat.wav */,
+				46E5B5D828AC1861004BD0AE /* 17chair.wav */,
+				46E5B5CB28AC1860004BD0AE /* 17flute.wav */,
+				46E5B5BF28AC185F004BD0AE /* 17piano.wav */,
+				46E5B5CD28AC1860004BD0AE /* 17trumpet.wav */,
+				46E5B5DF28AC1861004BD0AE /* 18.wav */,
+				46E5B5FA28AC1863004BD0AE /* 18bird.wav */,
+				46E5B5EE28AC1862004BD0AE /* 18bottle.wav */,
+				46E5B5D028AC1860004BD0AE /* 18breath.wav */,
+				46E5B5E728AC1862004BD0AE /* 18buzz.wav */,
+				46E5B61E28AC1865004BD0AE /* 18cat.wav */,
+				46E5B5F528AC1863004BD0AE /* 18chair.wav */,
+				46E5B5F428AC1863004BD0AE /* 18flute.wav */,
+				46E5B61928AC1864004BD0AE /* 18piano.wav */,
+				46E5B5C928AC1860004BD0AE /* 18trumpet.wav */,
+				46E5B5E328AC1862004BD0AE /* 19.wav */,
+				46E5B5F728AC1863004BD0AE /* 19bird.wav */,
+				46E5B5EB28AC1862004BD0AE /* 19bottle.wav */,
+				46E5B5C828AC1860004BD0AE /* 19breath.wav */,
+				46E5B5D228AC1861004BD0AE /* 19buzz.wav */,
+				46E5B5BE28AC185F004BD0AE /* 19cat.wav */,
+				46E5B60828AC1864004BD0AE /* 19chair.wav */,
+				46E5B60C28AC1864004BD0AE /* 19flute.wav */,
+				46E5B5F928AC1863004BD0AE /* 19piano.wav */,
+				46E5B61C28AC1865004BD0AE /* 19trumpet.wav */,
+				46E5B5FB28AC1863004BD0AE /* 20.wav */,
+				46E5B5F128AC1862004BD0AE /* 20bird.wav */,
+				46E5B5C028AC185F004BD0AE /* 20bottle.wav */,
+				46E5B5D628AC1861004BD0AE /* 20breath.wav */,
+				46E5B61028AC1864004BD0AE /* 20buzz.wav */,
+				46E5B5FE28AC1863004BD0AE /* 20cat.wav */,
+				46E5B60328AC1863004BD0AE /* 20chair.wav */,
+				46E5B60028AC1863004BD0AE /* 20flute.wav */,
+				46E5B60D28AC1864004BD0AE /* 20piano.wav */,
+				46E5B5D728AC1861004BD0AE /* 20trumpet.wav */,
+				46EBF34C289C9986006E778B /* 100.wav */,
+				46EBF358289CA7E9006E778B /* Shutter.mp3 */,
+			);
+			path = AudioFiles;
+			sourceTree = "<group>";
+		};
 		71BBE03722E33B2500E74F11 = {
 			isa = PBXGroup;
 			children = (
+				46B2745828B845C900A217A0 /* 3.wav */,
+				46B2744F28B845C800A217A0 /* 4.wav */,
+				46B2745A28B845C900A217A0 /* 5.wav */,
+				46B2744C28B845C700A217A0 /* 6.wav */,
+				46B2745B28B845C900A217A0 /* 7.wav */,
+				46B2745628B845C900A217A0 /* 8.wav */,
+				46B2745428B845C800A217A0 /* 9.wav */,
+				46B2745128B845C800A217A0 /* 10.wav */,
+				46B2744D28B845C800A217A0 /* 11.wav */,
+				46B2745228B845C800A217A0 /* 12.wav */,
+				46B2745928B845C900A217A0 /* 13.wav */,
+				46B2745528B845C900A217A0 /* 14.wav */,
+				46B2745028B845C800A217A0 /* 15.wav */,
+				46B2745328B845C800A217A0 /* 16.wav */,
+				46B2745C28B845C900A217A0 /* 17.wav */,
+				46B2744B28B845C700A217A0 /* 18.wav */,
+				46B2744E28B845C800A217A0 /* 19.wav */,
+				46B2745728B845C900A217A0 /* 20.wav */,
+				46B2744928B8458E00A217A0 /* 2.wav */,
+				46B2744628B8455400A217A0 /* 1.wav */,
 				71BBE04222E33B2500E74F11 /* SemanticSegmentation-CoreML */,
 				71BBE04122E33B2500E74F11 /* Products */,
 			);
@@ -98,6 +754,7 @@
 		71BBE04222E33B2500E74F11 /* SemanticSegmentation-CoreML */ = {
 			isa = PBXGroup;
 			children = (
+				46EBF9862899D21E0030C0E7 /* AudioFiles */,
 				71BBE04722E33B2500E74F11 /* Main.storyboard */,
 				71BBE04322E33B2500E74F11 /* AppDelegate.swift */,
 				71BBE04522E33B2500E74F11 /* LiveImageViewController.swift */,
@@ -220,9 +877,212 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B2745D28B845CA00A217A0 /* 18.wav in Resources */,
+				46B2745E28B845CA00A217A0 /* 6.wav in Resources */,
+				46B2745F28B845CA00A217A0 /* 11.wav in Resources */,
+				46B2746028B845CA00A217A0 /* 19.wav in Resources */,
+				46B2746128B845CA00A217A0 /* 4.wav in Resources */,
+				46B2746228B845CA00A217A0 /* 15.wav in Resources */,
+				46B2746328B845CA00A217A0 /* 10.wav in Resources */,
+				46B2746428B845CA00A217A0 /* 12.wav in Resources */,
+				46B2746528B845CA00A217A0 /* 16.wav in Resources */,
+				46B2746628B845CA00A217A0 /* 9.wav in Resources */,
+				46B2746728B845CA00A217A0 /* 14.wav in Resources */,
+				46B2746828B845CA00A217A0 /* 8.wav in Resources */,
+				46B2746928B845CA00A217A0 /* 20.wav in Resources */,
+				46B2746A28B845CA00A217A0 /* 3.wav in Resources */,
+				46B2746B28B845CA00A217A0 /* 13.wav in Resources */,
+				46B2746C28B845CA00A217A0 /* 5.wav in Resources */,
+				46B2746D28B845CA00A217A0 /* 7.wav in Resources */,
+				46B2746E28B845CA00A217A0 /* 17.wav in Resources */,
+				46B2744A28B8458E00A217A0 /* 2.wav in Resources */,
+				46B2744728B8455400A217A0 /* 1.wav in Resources */,
+				46E5B57528AC1823004BD0AE /* 3bird.wav in Resources */,
+				46E5B62E28AC1865004BD0AE /* 12piano.wav in Resources */,
+				46E5B64928AC1865004BD0AE /* 15bird.wav in Resources */,
+				46E5B5A228AC1823004BD0AE /* 4piano.wav in Resources */,
+				46E5B64428AC1865004BD0AE /* 16breath.wav in Resources */,
+				4698D94328AAEE1D00618E27 /* 1cat.wav in Resources */,
+				46E5B62A28AC1865004BD0AE /* 14breath.wav in Resources */,
+				46E5B58E28AC1823004BD0AE /* 9chair.wav in Resources */,
+				46E5B5B328AC1823004BD0AE /* 5trumpet.wav in Resources */,
+				46E5B67828AC1865004BD0AE /* 17breath.wav in Resources */,
+				4698D94028AAEE1D00618E27 /* 1flute.wav in Resources */,
+				46E5B67228AC1865004BD0AE /* 14bottle.wav in Resources */,
+				46E5B62028AC1865004BD0AE /* 15piano.wav in Resources */,
+				46E5B62C28AC1865004BD0AE /* 19breath.wav in Resources */,
+				46E5B5B828AC1823004BD0AE /* 7piano.wav in Resources */,
+				46E5B5A728AC1823004BD0AE /* 6bird.wav in Resources */,
+				46E5B63F28AC1865004BD0AE /* 11bird.wav in Resources */,
+				46E5B63B28AC1865004BD0AE /* 20trumpet.wav in Resources */,
+				46E5B59B28AC1823004BD0AE /* 4flute.wav in Resources */,
+				46E5B63128AC1865004BD0AE /* 17trumpet.wav in Resources */,
+				46E5B67B28AC1865004BD0AE /* 16flute.wav in Resources */,
+				46E5B67328AC1865004BD0AE /* 13buzz.wav in Resources */,
+				46E5B66828AC1865004BD0AE /* 17bird.wav in Resources */,
+				46E5B62F28AC1865004BD0AE /* 17flute.wav in Resources */,
+				46E5B59128AC1823004BD0AE /* 9cat.wav in Resources */,
+				46E5B67728AC1865004BD0AE /* 14chair.wav in Resources */,
+				46E5B58928AC1823004BD0AE /* 7flute.wav in Resources */,
+				46E5B56C28AC1823004BD0AE /* 5bottle.wav in Resources */,
+				46E5B5A128AC1823004BD0AE /* 2breath.wav in Resources */,
+				46EBF357289C9986006E778B /* 100.wav in Resources */,
+				46E5B63328AC1865004BD0AE /* 15cat.wav in Resources */,
+				46E5B62228AC1865004BD0AE /* 19cat.wav in Resources */,
+				46E5B64F28AC1865004BD0AE /* 19bottle.wav in Resources */,
+				46E5B5BB28AC1823004BD0AE /* 10bird.wav in Resources */,
+				46E5B57328AC1823004BD0AE /* 3trumpet.wav in Resources */,
+				46E5B56628AC1823004BD0AE /* 5bird.wav in Resources */,
+				46E5B64C28AC1865004BD0AE /* 11cat.wav in Resources */,
+				46E5B62728AC1865004BD0AE /* 11chair.wav in Resources */,
+				46E5B57928AC1823004BD0AE /* 7bird.wav in Resources */,
+				46E5B63928AC1865004BD0AE /* 12buzz.wav in Resources */,
+				46E5B57028AC1823004BD0AE /* 6piano.wav in Resources */,
+				46E5B57728AC1823004BD0AE /* 8bottle.wav in Resources */,
+				46E5B62828AC1865004BD0AE /* 11buzz.wav in Resources */,
+				46E5B59D28AC1823004BD0AE /* 10piano.wav in Resources */,
+				46E5B66328AC1865004BD0AE /* 15breath.wav in Resources */,
+				46E5B67028AC1865004BD0AE /* 19flute.wav in Resources */,
+				46E5B65328AC1865004BD0AE /* 15flute.wav in Resources */,
+				46E5B64A28AC1865004BD0AE /* 12bird.wav in Resources */,
+				46E5B56F28AC1823004BD0AE /* 3cat.wav in Resources */,
+				46E5B64628AC1865004BD0AE /* 15buzz.wav in Resources */,
+				46E5B64228AC1865004BD0AE /* 11flute.wav in Resources */,
+				46E5B67628AC1865004BD0AE /* 12bottle.wav in Resources */,
+				46E5B56828AC1823004BD0AE /* 4buzz.wav in Resources */,
+				46E5B65E28AC1865004BD0AE /* 18bird.wav in Resources */,
+				46E5B58828AC1823004BD0AE /* 5piano.wav in Resources */,
+				46E5B63E28AC1865004BD0AE /* 16bird.wav in Resources */,
+				46E5B5B528AC1823004BD0AE /* 2trumpet.wav in Resources */,
+				46E5B65728AC1865004BD0AE /* 11bottle.wav in Resources */,
+				46E5B68528AC1C0A004BD0AE /* drum.wav in Resources */,
+				46E5B65028AC1865004BD0AE /* 13piano.wav in Resources */,
 				71BBE04E22E33B2600E74F11 /* LaunchScreen.storyboard in Resources */,
+				46E5B66D28AC1865004BD0AE /* 16cat.wav in Resources */,
+				4698D94428AAEE1D00618E27 /* 1bottle.wav in Resources */,
+				46E5B58628AC1823004BD0AE /* 8buzz.wav in Resources */,
+				46E5B5A928AC1823004BD0AE /* 5breath.wav in Resources */,
+				46E5B58728AC1823004BD0AE /* 5flute.wav in Resources */,
+				4698D93F28AAEE1D00618E27 /* 1breath.wav in Resources */,
+				46E5B66A28AC1865004BD0AE /* 17bottle.wav in Resources */,
+				46E5B5A028AC1823004BD0AE /* 7cat.wav in Resources */,
+				46E5B63728AC1865004BD0AE /* 13breath.wav in Resources */,
+				46E5B62428AC1865004BD0AE /* 20bottle.wav in Resources */,
+				46E5B5A428AC1823004BD0AE /* 3bottle.wav in Resources */,
+				4698D94128AAEE1D00618E27 /* 1chair.wav in Resources */,
+				46E5B58028AC1823004BD0AE /* 8bird.wav in Resources */,
+				46E5B66228AC1865004BD0AE /* 20cat.wav in Resources */,
+				46E5B5B928AC1823004BD0AE /* 2piano.wav in Resources */,
+				46E5B63028AC1865004BD0AE /* 13bird.wav in Resources */,
+				46E5B62328AC1865004BD0AE /* 17piano.wav in Resources */,
+				46E5B67428AC1865004BD0AE /* 20buzz.wav in Resources */,
+				46E5B67E28AC1865004BD0AE /* 17cat.wav in Resources */,
+				46E5B62528AC1865004BD0AE /* 12breath.wav in Resources */,
+				46E5B67928AC1865004BD0AE /* 14trumpet.wav in Resources */,
+				46E5B63228AC1865004BD0AE /* 13flute.wav in Resources */,
+				46E5B5AB28AC1823004BD0AE /* 5chair.wav in Resources */,
+				46E5B58428AC1823004BD0AE /* 4bottle.wav in Resources */,
+				46EBF359289CA7E9006E778B /* Shutter.mp3 in Resources */,
+				46E5B59C28AC1823004BD0AE /* 4breath.wav in Resources */,
+				46E5B62128AC1865004BD0AE /* 16chair.wav in Resources */,
+				46E5B65A28AC1865004BD0AE /* 11piano.wav in Resources */,
+				46E5B68128AC1865004BD0AE /* 13chair.wav in Resources */,
+				46E5B65C28AC1865004BD0AE /* 16bottle.wav in Resources */,
+				46E5B63628AC1865004BD0AE /* 19buzz.wav in Resources */,
+				46E5B5A528AC1823004BD0AE /* 6cat.wav in Resources */,
+				46E5B62D28AC1865004BD0AE /* 18trumpet.wav in Resources */,
+				46E5B5AD28AC1823004BD0AE /* 2flute.wav in Resources */,
+				46E5B5B028AC1823004BD0AE /* 2chair.wav in Resources */,
+				46E5B5BA28AC1823004BD0AE /* 6buzz.wav in Resources */,
+				46E5B59E28AC1823004BD0AE /* 7trumpet.wav in Resources */,
+				46E5B66E28AC1865004BD0AE /* 16piano.wav in Resources */,
+				46E5B67C28AC1865004BD0AE /* 13cat.wav in Resources */,
+				46E5B58B28AC1823004BD0AE /* 7breath.wav in Resources */,
+				46E5B5AF28AC1823004BD0AE /* 4bird.wav in Resources */,
+				46E5B65928AC1865004BD0AE /* 18chair.wav in Resources */,
+				46E5B56928AC1823004BD0AE /* 6trumpet.wav in Resources */,
+				46E5B62628AC1865004BD0AE /* 12flute.wav in Resources */,
+				46E5B66428AC1865004BD0AE /* 20flute.wav in Resources */,
+				46E5B5B428AC1823004BD0AE /* 8chair.wav in Resources */,
+				46E5B65B28AC1865004BD0AE /* 19bird.wav in Resources */,
+				46E5B59628AC1823004BD0AE /* 9bottle.wav in Resources */,
+				46E5B56528AC1823004BD0AE /* 10trumpet.wav in Resources */,
+				46E5B65628AC1865004BD0AE /* 13trumpet.wav in Resources */,
+				46E5B57F28AC1823004BD0AE /* 2buzz.wav in Resources */,
+				46E5B58128AC1823004BD0AE /* 10bottle.wav in Resources */,
 				71BBE04B22E33B2600E74F11 /* Assets.xcassets in Resources */,
+				46E5B63D28AC1865004BD0AE /* 14bird.wav in Resources */,
+				46E5B59528AC1823004BD0AE /* 3piano.wav in Resources */,
+				46E5B59328AC1823004BD0AE /* 9trumpet.wav in Resources */,
+				46E5B68028AC1865004BD0AE /* 19trumpet.wav in Resources */,
+				46E5B66928AC1865004BD0AE /* 16buzz.wav in Resources */,
+				46E5B5AA28AC1823004BD0AE /* 5buzz.wav in Resources */,
+				46E5B56428AC1823004BD0AE /* 3breath.wav in Resources */,
+				46E5B58328AC1823004BD0AE /* 8breath.wav in Resources */,
+				46E5B5B628AC1823004BD0AE /* 9flute.wav in Resources */,
+				46E5B64E28AC1865004BD0AE /* 14buzz.wav in Resources */,
+				46E5B63C28AC1865004BD0AE /* 17chair.wav in Resources */,
+				46E5B59028AC1823004BD0AE /* 10cat.wav in Resources */,
+				46E5B62928AC1865004BD0AE /* 11trumpet.wav in Resources */,
+				46E5B5A328AC1823004BD0AE /* 10breath.wav in Resources */,
+				46E5B65828AC1865004BD0AE /* 18flute.wav in Resources */,
+				46E5B63528AC1865004BD0AE /* 12cat.wav in Resources */,
+				46E5B67128AC1865004BD0AE /* 20piano.wav in Resources */,
+				46E5B64B28AC1865004BD0AE /* 18buzz.wav in Resources */,
+				46E5B59A28AC1823004BD0AE /* 4trumpet.wav in Resources */,
+				46E5B66C28AC1865004BD0AE /* 19chair.wav in Resources */,
+				46E5B58D28AC1823004BD0AE /* 9buzz.wav in Resources */,
+				46E5B59F28AC1823004BD0AE /* 8trumpet.wav in Resources */,
+				46E5B63A28AC1865004BD0AE /* 20breath.wav in Resources */,
+				46E5B5B228AC1823004BD0AE /* 4chair.wav in Resources */,
+				46E5B5B128AC1823004BD0AE /* 3flute.wav in Resources */,
+				46E5B59728AC1823004BD0AE /* 3chair.wav in Resources */,
+				4698D93E28AAEE1D00618E27 /* 1bird.wav in Resources */,
+				46E5B66528AC1865004BD0AE /* 14flute.wav in Resources */,
+				4698D94728AAEE1D00618E27 /* 1buzz.wav in Resources */,
+				46E5B56728AC1823004BD0AE /* 2bottle.wav in Resources */,
+				46E5B66B28AC1865004BD0AE /* 13bottle.wav in Resources */,
+				46E5B58C28AC1823004BD0AE /* 8piano.wav in Resources */,
+				46E5B57128AC1823004BD0AE /* 7chair.wav in Resources */,
+				46E5B66128AC1865004BD0AE /* 11breath.wav in Resources */,
+				46E5B59228AC1823004BD0AE /* 5cat.wav in Resources */,
+				46E5B67D28AC1865004BD0AE /* 18piano.wav in Resources */,
+				46E5B57428AC1823004BD0AE /* 7bottle.wav in Resources */,
+				46E5B5A828AC1823004BD0AE /* 9piano.wav in Resources */,
+				46E5B56228AC1823004BD0AE /* 6flute.wav in Resources */,
+				46E5B65D28AC1865004BD0AE /* 19piano.wav in Resources */,
+				46E5B62B28AC1865004BD0AE /* 15trumpet.wav in Resources */,
+				46E5B64828AC1865004BD0AE /* 17buzz.wav in Resources */,
+				46E5B66628AC1865004BD0AE /* 14piano.wav in Resources */,
+				4698D94628AAEE1D00618E27 /* 1piano.wav in Resources */,
+				46E5B68228AC1865004BD0AE /* 18cat.wav in Resources */,
+				46E5B67528AC1865004BD0AE /* 12chair.wav in Resources */,
+				46E5B56328AC1823004BD0AE /* 2bird.wav in Resources */,
+				46E5B56D28AC1823004BD0AE /* 2cat.wav in Resources */,
+				46E5B56E28AC1823004BD0AE /* 3buzz.wav in Resources */,
+				46E5B56B28AC1823004BD0AE /* 4cat.wav in Resources */,
+				46E5B66728AC1865004BD0AE /* 20chair.wav in Resources */,
+				46E5B63828AC1865004BD0AE /* 16trumpet.wav in Resources */,
+				46E5B65228AC1865004BD0AE /* 18bottle.wav in Resources */,
+				46E5B57D28AC1823004BD0AE /* 9breath.wav in Resources */,
+				46E5B65428AC1865004BD0AE /* 14cat.wav in Resources */,
+				46E5B57C28AC1823004BD0AE /* 7buzz.wav in Resources */,
+				46E5B5AE28AC1823004BD0AE /* 10buzz.wav in Resources */,
+				46E5B5A628AC1823004BD0AE /* 6chair.wav in Resources */,
 				71BBE04922E33B2500E74F11 /* Main.storyboard in Resources */,
+				46E5B5B728AC1823004BD0AE /* 10flute.wav in Resources */,
+				4698D94228AAEE1D00618E27 /* 1trumpet.wav in Resources */,
+				46E5B59828AC1823004BD0AE /* 6breath.wav in Resources */,
+				46E5B66028AC1865004BD0AE /* 15chair.wav in Resources */,
+				46E5B57A28AC1823004BD0AE /* 8flute.wav in Resources */,
+				46E5B56A28AC1823004BD0AE /* 9bird.wav in Resources */,
+				46E5B59428AC1823004BD0AE /* 8cat.wav in Resources */,
+				46E5B65528AC1865004BD0AE /* 20bird.wav in Resources */,
+				46E5B59928AC1823004BD0AE /* 6bottle.wav in Resources */,
+				46E5B64D28AC1865004BD0AE /* 12trumpet.wav in Resources */,
+				46E5B58228AC1823004BD0AE /* 10chair.wav in Resources */,
+				46E5B63428AC1865004BD0AE /* 18breath.wav in Resources */,
+				46E5B65128AC1865004BD0AE /* 15bottle.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +1193,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -388,7 +1248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -406,7 +1266,7 @@
 				DEVELOPMENT_TEAM = X8YTFUG93C;
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "SemanticSegmentation-CoreML/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,7 +1286,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8YTFUG93C;
 				INFOPLIST_FILE = "SemanticSegmentation-CoreML/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

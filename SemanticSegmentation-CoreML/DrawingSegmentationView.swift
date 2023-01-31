@@ -12,6 +12,8 @@ class DrawingSegmentationView: UIView {
     
     static private var colors: [Int32: UIColor] = [:]
     
+    //Giles change this to alter colors. Deep to change this.
+    
     func segmentationColor(with index: Int32) -> UIColor {
         if let color = DrawingSegmentationView.colors[index] {
             return color
