@@ -553,6 +553,9 @@ extension LiveMetalCameraViewController {
 //            }
             let cnt=x_vals.count
             print(cnt)
+            if cnt == 0 {
+                centerObj=""
+            }
             if (cnt>0) {
                 let med=x_vals.sorted(by: <)[cnt / 2]
                 var med_ind = 0
@@ -561,7 +564,7 @@ extension LiveMetalCameraViewController {
                         med_ind=i
                     }
                 }
-                if (objs[med_ind] != centerObj) {
+                if (objs[med_ind] != centerObj && objSizes[med_ind]>=0.05) {
                     StillImageViewController.speak(text: objs[med_ind], multiplier: 1)
                     centerObj=objs[med_ind]
                 }
